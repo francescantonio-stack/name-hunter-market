@@ -12,7 +12,7 @@
 /* Layout: registro di nomi-account in colonna unica, barra filtri appiccicata, scheda d'acquisto in fondo allo schermo */
 :root{
   --bg:#eef2f0;--surface:#ffffff;--ink:#15201c;--muted:#5a6964;--line:#d6dfdb;
-  --accent:#0d6b5b;--accent-ink:#ffffff;--auction:#9a5b14;--auction-bg:#f7ecdd;--sold:#7d8783;--warn-bg:#fff4d6;--warn-ink:#6b4a00;
+  --accent:#0d6b5b;--accent-ink:#ffffff;--auction:#9a5b14;--auction-bg:#f7ecdd;--sold:#7d8783;--warn-bg:#fff4d6;--warn-ink:#6b4a00;--rent:#4b3fa8;--rent-bg:#ebe8fb;
   --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
   --f-body:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
@@ -20,10 +20,10 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0d1311;--surface:#151d1a;--ink:#e4ece8;--muted:#93a39d;--line:#27322e;
-  --accent:#45b89f;--accent-ink:#06120f;--auction:#e3a24f;--auction-bg:#2a2013;--sold:#6f7a76;--warn-bg:#2b2410;--warn-ink:#f0d48a;color-scheme:dark}}
+  --accent:#45b89f;--accent-ink:#06120f;--auction:#e3a24f;--auction-bg:#2a2013;--sold:#6f7a76;--warn-bg:#2b2410;--warn-ink:#f0d48a;--rent:#b8adff;--rent-bg:#241f45;color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0d1311;--surface:#151d1a;--ink:#e4ece8;--muted:#93a39d;--line:#27322e;
-  --accent:#45b89f;--accent-ink:#06120f;--auction:#e3a24f;--auction-bg:#2a2013;--sold:#6f7a76;--warn-bg:#2b2410;--warn-ink:#f0d48a;color-scheme:dark}
+  --accent:#45b89f;--accent-ink:#06120f;--auction:#e3a24f;--auction-bg:#2a2013;--sold:#6f7a76;--warn-bg:#2b2410;--warn-ink:#f0d48a;--rent:#b8adff;--rent-bg:#241f45;color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body);-webkit-font-smoothing:antialiased}
 .wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:18px 120px}
@@ -89,6 +89,19 @@ footer{margin-top:22px;color:var(--muted);font-size:12px}
 .botbox{display:grid;gap:10px;background:var(--bg);border-radius:var(--r);padding:12px}
 .botbox .big{display:block;text-align:center;font-size:16px;padding:13px 16px;text-decoration:none}
 .skeleton{color:var(--muted);padding:40px 0;text-align:center}
+
+/* Affitti */
+.tag.rent{background:var(--rent-bg);color:var(--rent)}
+.btns{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.btn.sm{font-size:12.5px;padding:7px 10px}
+@media (max-width:560px){.btns{flex-direction:column-reverse;align-items:stretch}.btns .btn{text-align:center}}
+.subbox{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:grid;gap:8px}
+.subbox h3{margin:0;font:700 17px var(--f-display)}
+.subbox .hint{margin:0}
+.subrow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;align-items:center}
+.subrow .sort{margin-left:0;max-width:44vw}
+@media (max-width:420px){.subrow{grid-template-columns:minmax(0,1fr) auto}.subrow .btn{grid-column:1/-1}}
+.hint a,.steps a{color:var(--accent)}
 </style>
 </head>
 <body>
