@@ -1,4 +1,4 @@
-# Name Hunter Market
+# name Hunter Market
 
 Catalogo pubblico di nomi account NEAR **testnet**, con prezzi calcolati sulle vendite reali in mainnet. Acquisti e offerte passano dal bot Telegram [@NameHunterMarketBot](https://t.me/NameHunterMarketBot).
 
