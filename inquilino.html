@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- Script solo da questo sito (near-api-js è in vendor/), rete solo verso le RPC NEAR usate dal pannello -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src https://rpc.testnet.fastnear.com https://free.rpc.fastnear.com; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <title>Pannello inquilino · Name Hunter</title>
 <meta name="description" content="Usa il nome NEAR che hai in affitto: ricevi e invia NEAR, usa contratti e app.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
