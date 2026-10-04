@@ -1,0 +1,9 @@
+{
+  "name": "nh-vendor-near-api-js",
+  "private": true,
+  "description": "Copia locale di near-api-js per il Pannello inquilino (niente CDN esterni). Rigenera con ./build.sh",
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "near-api-js": "7.3.1"
+  }
+}
