@@ -19,7 +19,7 @@ async function leggi(a){try{const [info,nf]=await Promise.all([view(C,"view_acco
  catch(e){if(/No account|not registered/i.test(e.message))return {reg:false,rel:[]};const s=snap(a);return s?{...s,live:false}:null}}
 const contatti=()=>'<a class="btn" href="https://t.me/'+BOT+'" target="_blank" rel="noopener">Fai un\'offerta su Telegram</a>';
 function card(a){const x=MMK.scheda(a,DATI[a]||null,SLOT,TN),P=x.prezzi;let h='<div class="card"><div class="k">'+esc(x.dom)+'</div>';
-  if(x.nonreg)return h+'<p class="hint">Non registrato su Moon · solo il nome</p><span class="b">prezzo da definire</span><br>'+contatti()+'</div>';
+  if(x.nonreg)return h+'<p class="hint">Non registrato su Moon · solo il nome</p><span class="b">Solo offerte</span> <span class="b">prezzo da definire</span><br>'+contatti()+'</div>';
   const st=x.rel.filter(r=>r.s).length;
   h+='<dl><dt>Moon avviato</dt><dd>'+(x.avviato==null?"—":x.avviato?"sì":"no")+'</dd><dt>Vault</dt><dd>livello '+esc(x.vault??"—")+'</dd><dt>Gear</dt><dd>livello '+esc(x.gear??"—")+'</dd>'+
    '<dt>Slot relic</dt><dd>'+esc(x.slot??"—")+(x.slot!=null?" ("+st+" occupati)":"")+'</dd><dt>Relic</dt><dd>'+x.rel.length+(x.rel.length?" · "+esc(x.rel.map(r=>r.n).join(", ")):"")+'</dd>'+
@@ -31,7 +31,7 @@ function render(){const E=MMK.elenco(),RL=MMK.relics(a=>DATI[a]);
   document.getElementById("root").innerHTML=
    '<h2>Vendibili ('+E.vend.length+') · affitto, asta, compra subito, offerta</h2><p class="hint">Prezzi: da definire.</p>'+E.vend.map(card).join("")+
    '<h2>Solo offerte ('+E.off.length+')</h2><p class="hint">Account protetti: niente affitto, asta o compra subito, solo offerte.</p>'+E.off.map(card).join("")+
-   '<h2>Non registrati su Moon ('+E.nonreg.length+')</h2>'+E.nonreg.map(card).join("")+
+   '<h2>Non registrati su Moon ('+E.nonreg.length+') · solo offerte</h2><p class="hint">Per ora solo offerte, in attesa di decisione.</p>'+E.nonreg.map(card).join("")+
    '<h2>Relics ('+RL.length+')</h2><div class="card"><p>'+esc(MMK.NOTA_RELIC)+'</p><p>'+esc(MMK.NOTA_TINKER)+'</p><ul>'+
    RL.map(r=>'<li>'+esc(r.n)+(r.b!=null?" +"+fm(r.b,0)+" %":"")+' · da '+esc(r.o)+' · '+(r.s?"in staking: serve unstake":"nel wallet")+' · prezzo da definire</li>').join("")+'</ul>'+contatti()+'</div>'+
    '<p class="hint">'+(Object.values(DATI).some(d=>d&&d.live===false)?"Alcuni dati vengono dall'istantanea "+esc(SN()?.ora||"")+" (RPC non raggiungibile).":"")+'</p>'}

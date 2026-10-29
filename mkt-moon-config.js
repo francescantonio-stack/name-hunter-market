@@ -13,9 +13,9 @@ const MOON_MKT={
   vendibili:['mainpy','n-06','5_05','8_08','9-09','9_09','3-03','xido','6_06','0-12','7_07','3_03','n-05','0-10'],
   // Solo offerte: niente asta, niente compra subito; solo "Fai un'offerta" (Telegram / sito)
   soloOfferte:['n_e_a','neofita','no-joke','1_3_5'],
-  // Da tenere: non in vendita, non mostrati nel market
+  // Da tenere: nel market, SOLO "Fai un'offerta" (niente affitto, asta, compra subito)
   tenere:['7-07','00token','4-04','8-08','2_02','fairtea1148','112340','vickyss','meye','ot-7','1_1-1_1','6-06','no_joke','n-e-a','n_ea','n_e_a_r_1','4_04','cartella1','diosanto'],
-  // Non registrati su Moon: solo il nome, prezzo da definire
+  // Non registrati su Moon: solo il nome, per ora SOLO offerta (in attesa della decisione di Max)
   nonRegistrati:['ne_a','agenziadelleentrate','12_3','n-02'],
   // Sezione generale "Solo offerte": qualsiasi altro annuncio (nome del catalogo o account) da vendere solo su offerta
   soloOfferteNomi:[]
