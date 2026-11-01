@@ -22,12 +22,12 @@ const NHF=(()=>{
   const S0=()=>({q:'',sez:'',len:'',tipo:'',chain:'',acc:'',rel:'',avv:'',sort:'',dir:1});
   function filtra(items,s){const q=norm(s.q);return items.filter(x=>(!q||norm(x.n).includes(q)||norm(x.acc).includes(q))&&(!s.sez||x.sez===s.sez)&&lenOk(lenOf(x.n),s.len)
     &&(!s.tipo||x.tipo===s.tipo)&&(!s.chain||x.chain===s.chain)&&(!s.acc||x.acc===s.acc)&&(!s.rel||(s.rel==='si'?x.rel>0:!(x.rel>0)))&&(!s.avv||(s.avv==='si'?x.avv===true:x.avv===false)))}
-  const KEY={nome:x=>label(x.n),len:x=>lenOf(x.n),prezzo:x=>x.pr,near:x=>x.near,moon:x=>x.moon,prod:x=>x.prod,'':x=>x.i};
+  const KEY={pag:x=>x.pag,nome:x=>label(x.n),len:x=>lenOf(x.n),prezzo:x=>x.pr,near:x=>x.near,moon:x=>x.moon,prod:x=>x.prod,'':x=>x.i};
   // dir 1 = crescente, -1 = decrescente; null/undefined sempre in fondo in entrambe le direzioni; a parita' ordine originale
   function ordina(items,sort,dir=1){const k=KEY[sort]||KEY[''];return items.slice().sort((a,b)=>{const x=k(a),y=k(b),nx=x==null||x!==x,ny=y==null||y!==y;
     if(nx||ny)return nx&&ny?a.i-b.i:nx?1:-1;const c=typeof x==='string'?x.localeCompare(y,'it',{numeric:true}):x-y;return c?c*dir:(a.i-b.i)})}
   const applica=(items,s)=>ordina(filtra(items,s),s.sort,s.dir);
-  const SORTS=moon=>[['','Ordine: originale'],['nome','Nome'],['len','Lunghezza'],['prezzo','Prezzo'],['near','Saldo NEAR'],['moon','Saldo $MOON'],...(moon?[['prod','$MOON/h']]:[])];
+  const SORTS=(moon,rel)=>[['','Ordine: originale'],['nome','Nome'],['len','Lunghezza'],['prezzo','Prezzo'],['near','Saldo NEAR'],['moon','Saldo $MOON'],...(moon?[['prod','$MOON/h']]:[]),...(rel?[['pag','Prezzo pagato']]:[])];
   // ---------- saldi (sola lettura, cache) ----------
   const store=(()=>{try{return typeof localStorage!=='undefined'?localStorage:null}catch{return null}})();
   let BAL={};try{BAL=JSON.parse(store?.getItem('nhf-bal')||'{}')||{}}catch{BAL={}}
@@ -59,6 +59,10 @@ const NHF=(()=>{
   const esc=t=>String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const CONT='[data-nhf],.card.list,ul.list';
   const itemsDi=c=>c.hasAttribute('data-nhf')&&c.getAttribute('data-nhf')?[...c.querySelectorAll('.mmk,[data-fn]')].filter(x=>!x.parentElement.closest('.mmk')):[...c.children].filter(x=>x.matches('.item,li'));
+  // 3.9.1: la barra va SOLO sulle liste di nomi (non su livelli, gear, statistiche, dettagli)
+  const NOMELIKE=/^[a-z0-9_-]+(\.[a-z0-9_-]+)+$/;
+  function listaNomi(c){if(c.hasAttribute('data-nhfno'))return false;if(c.hasAttribute('data-nhf')||c.dataset.nhfext||c.dataset.nhfrel||c.classList.contains('nhf-vuota')||c.hasAttribute('data-nhfnomi'))return true;
+    const its=itemsDi(c);if(!its.length)return false;const ok=its.filter(el=>el.dataset.fn||NOMELIKE.test(norm(el.querySelector(':scope .nm, .k, .acct')?.textContent||''))).length;return ok>0&&ok>=its.length/2}
   const sezDi=(c,el)=>{if(el.dataset.fsez)return el.dataset.fsez;let p=el.closest('[data-fsezc]');if(p)return p.dataset.fsezc;let n=c;while(n){let s=n.previousElementSibling;while(s){if(/^H[1-4]$/.test(s.tagName))return s.textContent.replace(/\s*\(.*$/,'').replace(/\s*·.*$/,'').replace(/(Vedi tutti|Gestisci)$/,'').trim();s=s.previousElementSibling}n=n.parentElement;if(n&&n.id)break}
     const sg=document.querySelector('.seg [aria-selected="true"]');return sg?sg.textContent.trim():''};
   function leggiItem(c,el,i){const d=el.dataset;const nm=d.fn||(el.querySelector(':scope > .k, .k, .nm, .acct')?.textContent)||el.textContent.split('·')[0];
@@ -67,15 +71,15 @@ const NHF=(()=>{
     const pr=d.fpr!=null?(d.fpr===''?null:+d.fpr):(()=>{const v=el.querySelector(':scope > .r .v, .pn');return v&&/Ⓝ/.test(v.textContent)?parseNum(v.textContent):null})();
     const b=BAL[acc(n)];
     return {el,i,n,acc:am,sez:sezDi(c,el),tipo:d.ftipo||tipoOf(n,buy?'vend':''),chain:d.fchain||chainOf(n),pr,near:b?b.near:null,moon:b?b.moon:null,
-      prod:d.fprod!=null&&d.fprod!==''?+d.fprod:null,rel:d.frel!=null?+d.frel:null,avv:d.favv==='1'?true:d.favv==='0'?false:null}}
+      prod:d.fprod!=null&&d.fprod!==''?+d.fprod:null,pag:d.fpag!=null&&d.fpag!==''?+d.fpag:null,rel:d.frel!=null?+d.frel:null,avv:d.favv==='1'?true:d.favv==='0'?false:null}}
   const chiaveDi=(c,idx)=>{if(c.dataset.nhfext)return 'ext:'+c.dataset.nhfext;const pane=c.closest('[id]');const h=(typeof location!=='undefined'?location.hash.replace(/[?&]?q=[^&]*/,''):'')+'|'+(location?.pathname||'');
     const seg=document.querySelector('.seg [aria-selected="true"]')?.textContent||'';return c.getAttribute('data-nhf')||[pane?.id||'',h,seg,sezDi(c,c)||'',idx].join('|')};
   const opt=(v,l,cur)=>`<option value="${esc(v)}"${String(cur)===String(v)?' selected':''}>${esc(l)}</option>`;
   const sel=(k,lab,opts,cur)=>`<select data-nhfk="${k}" aria-label="${esc(lab)}">${opts.map(([v,l])=>opt(v,l,cur)).join('')}</select>`;
-  function barHTML(key,its,s,moon){const uniq=f=>[...new Set(its.map(f).filter(Boolean))].sort();
+  function barHTML(key,its,s,moon,rel){const uniq=f=>[...new Set(its.map(f).filter(Boolean))].sort();
     const sez=uniq(x=>x.sez),ch=uniq(x=>x.chain),ac=uniq(x=>x.acc);
     return `<div class="nhf-row"><input type="search" data-nhfk="q" placeholder="Cerca per nome…" value="${esc(s.q)}" autocomplete="off" spellcheck="false" aria-label="Cerca per nome">
-      ${sel('sort','Ordina per',SORTS(moon),s.sort)}<button type="button" class="nhf-dir" data-nhfdir="1" aria-label="Direzione: ${s.dir<0?'decrescente':'crescente'}" title="Inverti ordine">${s.dir<0?'↓ decrescente':'↑ crescente'}</button></div>
+      ${sel('sort','Ordina per',SORTS(moon,rel),s.sort)}<button type="button" class="nhf-dir" data-nhfdir="1" aria-label="Direzione: ${s.dir<0?'decrescente':'crescente'}" title="Inverti ordine">${s.dir<0?'↓ decrescente':'↑ crescente'}</button></div>
       <details class="nhf-more"${Object.entries(s).some(([k,v])=>!['q','sort','dir'].includes(k)&&v)?' open':''}><summary>Filtri</summary><div class="nhf-row">
       ${sel('sez','Sezione',[['','Sezione: tutte'],...sez.map(x=>[x,x])],s.sez)}${sel('len','Lunghezza',LEN,s.len)}
       ${sel('tipo','Tipo di vendita',[['','Vendita: tutte'],['vend','Vendita completa'],['off','Solo offerta']],s.tipo)}
@@ -98,9 +102,11 @@ const NHF=(()=>{
     const cnt=bar.querySelector('.nhf-count');if(cnt)cnt.textContent=its.length?vis.length+' di '+its.length:'Lista vuota';
     if((s.sort==='near'||s.sort==='moon')&&its.some(x=>acc(x.n)&&!fresco(BAL[acc(x.n)]))){const k=bar.dataset.key;if(c._nhfload!==k){c._nhfload=k;saldi(its.map(x=>x.n)).then(()=>{c._nhfload=null;agg()})}}}
   function monta(r){busy=true;try{const C=[...r.querySelectorAll(CONT)].filter(c=>!c.closest('.mmk')&&!c.parentElement.closest('[data-nhf]:not([data-nhf=""])')&&!c.closest('.nhf-bar'));
-    C.forEach((c,idx)=>{const key=chiaveDi(c,idx),moon=c.getAttribute('data-nhf')==='moon';let bar=c.previousElementSibling;
+    // barre rimaste su liste che non sono di nomi: via
+    [...r.querySelectorAll('.nhf-bar')].forEach(b=>{const n=b.nextElementSibling;if(!n||!C.includes(n)||!listaNomi(n))b.remove()});
+    C.forEach((c,idx)=>{if(!listaNomi(c))return;const key=chiaveDi(c,idx),moon=c.getAttribute('data-nhf')==='moon';let bar=c.previousElementSibling;
       if(!(bar&&bar.classList.contains('nhf-bar'))){bar=document.createElement('div');bar.className='nhf-bar';c.parentNode.insertBefore(bar,c);bar._new=1}
-      if(bar.dataset.key!==key||bar._new){const s=ST[key]||(ST[key]=S0());const ex=extDi(c);const its=ex?ex.items():itemsDi(c).map((el,i)=>leggiItem(c,el,i));bar.dataset.key=key;bar.innerHTML=barHTML(key,its,s,moon);bar._new=0;
+      if(bar.dataset.key!==key||bar._new){const s=ST[key]||(ST[key]=S0());const ex=extDi(c);const its=ex?ex.items():itemsDi(c).map((el,i)=>leggiItem(c,el,i));bar.dataset.key=key;bar.innerHTML=barHTML(key,its,s,moon,c.dataset.nhfrel==='1');bar._new=0;
         // se la lista e' stata ridisegnata mentre si scriveva nella ricerca, il focus torna al suo posto
         if(FOC&&FOC.key===key&&(!document.activeElement||document.activeElement===document.body)){const f=bar.querySelector(`[data-nhfk="${FOC.k}"]`);if(f){f.focus({preventScroll:true});try{if(f.setSelectionRange)f.setSelectionRange(f.value.length,f.value.length)}catch{}}}}
       c._nhfbar=bar;appl(c)});
@@ -116,6 +122,6 @@ const NHF=(()=>{
   function avvia(r){if(typeof document==='undefined')return;root=r||document.body;['input','change'].forEach(ev=>root.addEventListener(ev,evento));root.addEventListener('focusin',e=>{const b=e.target.closest?.('.nhf-bar');FOC=b&&e.target.dataset.nhfk?{key:b.dataset.key,k:e.target.dataset.nhfk}:null});root.addEventListener('click',e=>{if(e.target.closest?.('[data-nhfdir]'))evento({target:e.target.closest('[data-nhfdir]')})});
     let tm=null;obs=new MutationObserver(()=>{if(busy)return;clearTimeout(tm);tm=setTimeout(agg,30)});obs.observe(root,{childList:true,subtree:true});agg()}
   const stato=key=>ST[key]||(ST[key]=S0());
-  return {EXT,stato,item:(n,o={})=>({n:norm(n),acc:'',sez:'',chain:chainOf(n),pr:null,prod:null,rel:null,avv:null,...o,tipo:tipoOf(n,o.tipo),near:BAL[acc(n)]?.near??null,moon:BAL[acc(n)]?.moon??null}),fresco:n=>fresco(BAL[acc(n)]),chainOf,lenOf,label,tipoOf,parseNum,moonDaRaw,nearDaRaw,filtra,ordina,applica,SORTS,S0,saldo,saldi,balTxt,balHTML,BAL,monta,avvia,MOON_FT,MOON_DEC,TMO,PAUSA:1200,_fetch:null,ST}})();
+  return {EXT,stato,item:(n,o={})=>({n:norm(n),acc:'',sez:'',chain:chainOf(n),pr:null,prod:null,rel:null,avv:null,...o,tipo:tipoOf(n,o.tipo),near:BAL[acc(n)]?.near??null,moon:BAL[acc(n)]?.moon??null}),fresco:n=>fresco(BAL[acc(n)]),chainOf,lenOf,label,tipoOf,parseNum,moonDaRaw,nearDaRaw,filtra,ordina,applica,listaNomi,NOMELIKE,SORTS,S0,saldo,saldi,balTxt,balHTML,BAL,monta,avvia,MOON_FT,MOON_DEC,TMO,PAUSA:1200,_fetch:null,ST}})();
 if(typeof module!=='undefined')module.exports=NHF;
 else if(typeof document!=='undefined'){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>NHF.avvia());else NHF.avvia()}

@@ -91,7 +91,7 @@ function render(){
    '<div class="lang" role="group" aria-label="Language"><button type="button" data-lang="it" aria-pressed="'+(lang==="it")+'">IT</button><button type="button" data-lang="en" aria-pressed="'+(lang==="en")+'">EN</button></div></header>'+
    '<div class="notice" role="note">'+t("notice")+'</div>'+
    '<div class="stats"><span><strong>'+nf(A.length-nSold,0)+"</strong>"+t("names")+'</span><span><strong>'+nFix+"</strong>"+t("fixed")+'</span><span><strong>'+nAuc+"</strong>"+t("auctions")+'</span><span><strong>'+nSold+"</strong>"+t("sold")+'</span><span>'+t("rate")+": 1 Ⓝ = € "+nf(S.eur,2)+" · "+t("upd")+" "+esc(S.aggiornato)+"</span></div>"+subBox()+
-   '<div class="bar"><input id="q" class="search" type="search" autocomplete="off" spellcheck="false" placeholder="'+t("search")+'" value="'+esc(q)+'">'+
+   '<div class="bar">'+
    '<div class="chips">'+[["all","all"],["fix","fix"],["auc","auc"],["sold","sld"]].map(([k,l])=>'<button type="button" class="chip" data-f="'+k+'" aria-pressed="'+(filtro===k)+'">'+t(l)+"</button>").join("")+
    "</div></div>"+
    '<ul class="list" data-nhfext="cat">'+(vis.length?vis.map(x=>'<li class="item" data-fn="'+esc(x.n)+'.testnet"><div class="acct">'+esc(x.n)+'<span class="sfx">.testnet</span></div><div class="meta">'+metaOf(x)+'</div><div class="price"><div><div class="pn">'+(x.k==="auc"&&!x.top?"≥ ":"")+nf(x.near)+' Ⓝ</div><div class="pe">≈ € '+nf(x.near*S.eur,2)+"</div></div>"+
