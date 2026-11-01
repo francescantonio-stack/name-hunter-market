@@ -18,7 +18,7 @@ async function leggi(a){try{const [info,nf]=await Promise.all([view(C,"view_acco
   return {reg:true,tot:u8(info.production_per_hour),liv:{vault:info.vault_level,gear:info.gear_level},rel,tk:{own:info.space_tinkers||{},dep:(info.deployed_space_tinkers||[]).length},live:true}}
  catch(e){if(/No account|not registered/i.test(e.message))return {reg:false,rel:[]};const s=snap(a);return s?{...s,live:false}:null}}
 const contatti=()=>'<a class="btn" href="https://t.me/'+BOT+'" target="_blank" rel="noopener">Fai un\'offerta su Telegram</a>';
-function card(a){const x=MMK.scheda(a,DATI[a]||null,SLOT,TN),P=x.prezzi;let h='<div class="card"><div class="k">'+esc(x.dom)+'</div>';
+function card(a){const x=MMK.scheda(a,DATI[a]||null,SLOT,TN),P=x.prezzi;let h='<div class="card mmk" data-fn="'+esc(x.a)+'" data-fprod="'+(x.prod==null?"":esc(x.prod))+'" data-frel="'+x.rel.length+'" data-favv="'+(x.avviato==null?"":x.avviato?1:0)+'" data-ftipo="'+(x.soloOff?"off":"vend")+'" data-fpr="'+(P.compra==null?"":P.compra)+'" data-fsez="'+(x.nonreg?"Non registrati su Moon":x.soloOff?"Solo offerte":"Vendibili")+'"><div class="k">'+esc(x.dom)+'</div>'+(typeof NHF!=="undefined"?NHF.balHTML(x.a):"");
   if(x.nonreg)return h+'<p class="hint">Non registrato su Moon · solo il nome</p><span class="b">Solo offerte</span> <span class="b">prezzo da definire</span><br>'+contatti()+'</div>';
   const st=x.rel.filter(r=>r.s).length;
   h+='<dl><dt>Moon avviato</dt><dd>'+(x.avviato==null?"—":x.avviato?"sì":"no")+'</dd><dt>Vault</dt><dd>livello '+esc(x.vault??"—")+'</dd><dt>Gear</dt><dd>livello '+esc(x.gear??"—")+'</dd>'+
@@ -28,12 +28,12 @@ function card(a){const x=MMK.scheda(a,DATI[a]||null,SLOT,TN),P=x.prezzi;let h='<
   return h+'<dl><dt>Affitto</dt><dd>'+MMK.prezzoTxt(P.affitto,"/mese")+'</dd><dt>Asta (base)</dt><dd>'+MMK.prezzoTxt(P.asta)+'</dd><dt>Compra subito</dt><dd>'+MMK.prezzoTxt(P.compra)+'</dd></dl>'+
    '<span class="b">Affitto · Asta · Compra subito · Offerta</span><br>'+contatti()+'</div>'}
 function render(){const E=MMK.elenco(),RL=MMK.relics(a=>DATI[a]);
-  document.getElementById("root").innerHTML=
-   '<h2>Vendibili ('+E.vend.length+') · affitto, asta, compra subito, offerta</h2><p class="hint">Prezzi: da definire.</p>'+E.vend.map(card).join("")+
+  document.getElementById("root").innerHTML='<div data-nhf="moon">'+
+   '<h2>Vendibili ('+E.vend.length+') · affitto, asta, compra subito, offerta</h2><p class="hint">Prezzi: da definire. Saldo $MOON = ft_balance_of su aa-harvest-moon.near (8 decimali).</p>'+E.vend.map(card).join("")+
    '<h2>Solo offerte ('+E.off.length+')</h2><p class="hint">Account protetti: niente affitto, asta o compra subito, solo offerte.</p>'+E.off.map(card).join("")+
-   '<h2>Non registrati su Moon ('+E.nonreg.length+') · solo offerte</h2><p class="hint">Per ora solo offerte, in attesa di decisione.</p>'+E.nonreg.map(card).join("")+
-   '<h2>Relics ('+RL.length+')</h2><div class="card"><p>'+esc(MMK.NOTA_RELIC)+'</p><p>'+esc(MMK.NOTA_TINKER)+'</p><ul>'+
-   RL.map(r=>'<li>'+esc(r.n)+(r.b!=null?" +"+fm(r.b,0)+" %":"")+' · da '+esc(r.o)+' · '+(r.s?"in staking: serve unstake":"nel wallet")+' · prezzo da definire</li>').join("")+'</ul>'+contatti()+'</div>'+
+   '<h2>Non registrati su Moon ('+E.nonreg.length+') · solo offerte</h2><p class="hint">Per ora solo offerte, in attesa di decisione.</p>'+E.nonreg.map(card).join("")+'</div>'+
+   '<h2>Relics ('+RL.length+')</h2><div class="card"><p>'+esc(MMK.NOTA_RELIC)+'</p><p>'+esc(MMK.NOTA_TINKER)+'</p><ul class="list">'+
+   RL.map(r=>'<li class="item" data-fn="'+esc(r.n)+'" data-facc="'+esc(r.o)+'" data-frel="1">'+esc(r.n)+(r.b!=null?" +"+fm(r.b,0)+" %":"")+' · da '+esc(r.o)+' · '+(r.s?"in staking: serve unstake":"nel wallet")+' · prezzo da definire</li>').join("")+'</ul>'+contatti()+'</div>'+
    '<p class="hint">'+(Object.values(DATI).some(d=>d&&d.live===false)?"Alcuni dati vengono dall'istantanea "+esc(SN()?.ora||"")+" (RPC non raggiungibile).":"")+'</p>'}
 async function main(){Object.assign(DATI,Object.fromEntries([...MMK.L.vend,...MMK.L.off,...MMK.L.keep].map(a=>{const s=snap(a);return [a,s?{...s,live:false}:null]})));render();
   try{const [g,tl,rl]=await Promise.all([view(C,"get_gear_levels",{}).catch(()=>[]),view(C,"get_space_tinkers_list",{}).catch(()=>[]),view(C,"get_relic_list",{}).catch(()=>[])]);

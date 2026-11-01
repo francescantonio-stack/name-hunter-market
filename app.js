@@ -66,6 +66,7 @@ const subBase=net=>(AC().sotto[net]||{}).base||1;
 const netOf=id=>/\.testnet$/.test(id)?"testnet":"mainnet";
 function rented(id){const a=(S.affitti||{})[id];return a&&a.fino+(a.toll||3*DAY)>Date.now()?a:null}
 const dShort=ms=>new Date(ms).toLocaleDateString(lang==="it"?"it-IT":"en-GB",{day:"numeric",month:"short",year:"numeric"});
+let CAT_IT=[],CAT_N=[0,0],balRun=0;
 let filtro="all",ordine="price",q="",shown=60,sheetName=null,sheetMode="buy",rentG=30,subL="",subP=0,subRes=null;
 const all=()=>S.nomi.map(([n,m,k])=>({n,...info(n,m,k)})).filter(x=>x.k!=="hidden");
 function left(f){const ms=f-Date.now();if(ms<=0)return t("closed");const d=Math.floor(ms/DAY),h=Math.floor(ms%DAY/36e5);return t("ends")+" "+(d?d+" "+t("days")+" ":"")+h+" "+t("hours")}
@@ -80,20 +81,26 @@ function render(){
   if(!S)return;
   const A=all(),nFix=A.filter(x=>x.k==="fix").length,nAuc=A.filter(x=>x.k==="auc").length,nSold=A.filter(x=>x.k==="sold").length;
   const list=A.filter(x=>(filtro==="all"&&x.k!=="sold")||x.k===filtro).filter(x=>!q||x.n.includes(q)).sort((a,b)=>ordine==="az"?a.n.localeCompare(b.n):(b.near-a.near)||a.n.localeCompare(b.n));
-  const vis=list.slice(0,shown);
+  // 3.9: barra filtri/ordinamento condivisa (nh-filtri.js) applicata ai dati, prima della paginazione
+  let out=list;if(typeof NHF!=="undefined"){const st=NHF.stato("ext:cat"),SEZ={fix:t("fix"),auc:t("auc"),sold:t("sld"),rented:t("rentedTag")};
+    CAT_IT=list.map((x,i)=>NHF.item(x.n+".testnet",{i,x,sez:SEZ[x.k]||x.k,tipo:x.k==="sold"||x.k==="rented"?"":"vend",pr:x.k==="sold"?null:(x.k==="auc"&&x.top?x.top:x.near),acc:x.k==="sold"&&x.a?String(x.a):""}));
+    out=NHF.applica(CAT_IT,st).map(y=>y.x);CAT_N=[out.length,list.length];
+    if((st.sort==="near"||st.sort==="moon")&&!balRun){const need=out.slice(0,300).map(x=>x.n+".testnet").filter(n=>!NHF.fresco(n));if(need.length){balRun=1;NHF.saldi(need).then(()=>{balRun=0;render()})}}}
+  const vis=out.slice(0,shown);
   $("#root").innerHTML='<div class="wrap"><header class="top"><div><h1>Name Hunter <span class="tn">.testnet</span></h1><p class="lead">'+t("lead")+'</p></div>'+
    '<div class="lang" role="group" aria-label="Language"><button type="button" data-lang="it" aria-pressed="'+(lang==="it")+'">IT</button><button type="button" data-lang="en" aria-pressed="'+(lang==="en")+'">EN</button></div></header>'+
    '<div class="notice" role="note">'+t("notice")+'</div>'+
    '<div class="stats"><span><strong>'+nf(A.length-nSold,0)+"</strong>"+t("names")+'</span><span><strong>'+nFix+"</strong>"+t("fixed")+'</span><span><strong>'+nAuc+"</strong>"+t("auctions")+'</span><span><strong>'+nSold+"</strong>"+t("sold")+'</span><span>'+t("rate")+": 1 Ⓝ = € "+nf(S.eur,2)+" · "+t("upd")+" "+esc(S.aggiornato)+"</span></div>"+subBox()+
    '<div class="bar"><input id="q" class="search" type="search" autocomplete="off" spellcheck="false" placeholder="'+t("search")+'" value="'+esc(q)+'">'+
    '<div class="chips">'+[["all","all"],["fix","fix"],["auc","auc"],["sold","sld"]].map(([k,l])=>'<button type="button" class="chip" data-f="'+k+'" aria-pressed="'+(filtro===k)+'">'+t(l)+"</button>").join("")+
-   '<select id="sort" class="sort" aria-label="Sort"><option value="price"'+(ordine==="price"?" selected":"")+">"+t("sortP")+'</option><option value="az"'+(ordine==="az"?" selected":"")+">"+t("sortA")+"</option></select></div></div>"+
-   (vis.length?'<ul class="list">'+vis.map(x=>'<li class="item"><div class="acct">'+esc(x.n)+'<span class="sfx">.testnet</span></div><div class="meta">'+metaOf(x)+'</div><div class="price"><div><div class="pn">'+(x.k==="auc"&&!x.top?"≥ ":"")+nf(x.near)+' Ⓝ</div><div class="pe">≈ € '+nf(x.near*S.eur,2)+"</div></div>"+
-     (x.k==="rented"?'<button type="button" class="btn ghost" disabled>'+t("rentedTag")+"</button>":x.k==="sold"?'<button type="button" class="btn ghost" disabled>'+t("soldBtn")+"</button>":window.MMK&&MMK.isSoloOfferta(x.n)?'<div class="btns"><a class="btn" href="https://t.me/'+esc((S&&S.bot)||"NameHunterMarketBot")+'" target="_blank" rel="noopener">'+(lang==="it"?"Fai un'offerta":"Make an offer")+'</a></div>':'<div class="btns">'+(x.k==="auc"&&x.top?"":'<button type="button" class="btn ghost sm" data-rent="'+esc(x.n)+'">'+t("rent")+" "+t("from")+" "+nf(rentFrom(rentBase(x)))+" Ⓝ</button>")+'<button type="button" class="btn'+(x.k==="auc"?" auc":"")+'" data-open="'+esc(x.n)+'"'+(x.k==="auc"&&x.fine&&x.fine<Date.now()?" disabled":"")+">"+(x.k==="auc"?t("bid"):t("buy"))+"</button>"+(x.k!=="auc"?'<a class="btn ghost sm" href="https://t.me/'+esc((S&&S.bot)||"NameHunterMarketBot")+'" target="_blank" rel="noopener">'+(lang==="it"?"Fai un'offerta":"Make an offer")+"</a>":"")+"</div>")+"</div></li>").join("")+"</ul>":'<p class="empty">'+t("none")+"</p>")+
-   (list.length>shown?'<div class="more"><button type="button" class="btn ghost" id="more">'+t("more")+" ("+(list.length-shown)+")</button></div>":"")+
+   "</div></div>"+
+   '<ul class="list" data-nhfext="cat">'+(vis.length?vis.map(x=>'<li class="item" data-fn="'+esc(x.n)+'.testnet"><div class="acct">'+esc(x.n)+'<span class="sfx">.testnet</span></div><div class="meta">'+metaOf(x)+'</div><div class="price"><div><div class="pn">'+(x.k==="auc"&&!x.top?"≥ ":"")+nf(x.near)+' Ⓝ</div><div class="pe">≈ € '+nf(x.near*S.eur,2)+"</div></div>"+
+     (x.k==="rented"?'<button type="button" class="btn ghost" disabled>'+t("rentedTag")+"</button>":x.k==="sold"?'<button type="button" class="btn ghost" disabled>'+t("soldBtn")+"</button>":window.MMK&&MMK.isSoloOfferta(x.n)?'<div class="btns"><a class="btn" href="https://t.me/'+esc((S&&S.bot)||"NameHunterMarketBot")+'" target="_blank" rel="noopener">'+(lang==="it"?"Fai un'offerta":"Make an offer")+'</a></div>':'<div class="btns">'+(x.k==="auc"&&x.top?"":'<button type="button" class="btn ghost sm" data-rent="'+esc(x.n)+'">'+t("rent")+" "+t("from")+" "+nf(rentFrom(rentBase(x)))+" Ⓝ</button>")+'<button type="button" class="btn'+(x.k==="auc"?" auc":"")+'" data-open="'+esc(x.n)+'"'+(x.k==="auc"&&x.fine&&x.fine<Date.now()?" disabled":"")+">"+(x.k==="auc"?t("bid"):t("buy"))+"</button>"+(x.k!=="auc"?'<a class="btn ghost sm" href="https://t.me/'+esc((S&&S.bot)||"NameHunterMarketBot")+'" target="_blank" rel="noopener">'+(lang==="it"?"Fai un'offerta":"Make an offer")+"</a>":"")+"</div>")+"</div></li>").join("")+"</ul>":'<li class="empty">'+t("none")+"</li></ul>")+
+   (out.length>shown?'<div class="more"><button type="button" class="btn ghost" id="more">'+t("more")+" ("+(out.length-shown)+")</button></div>":"")+
    '<p><a href="moon.html">'+(lang==="it"?"Account Moon e Relics in vendita →":"Moon accounts and Relics for sale →")+'</a></p><footer>'+t("footer")+"</footer></div>";
   if(sheetName)drawSheet();
 }
+if(typeof NHF!=="undefined")NHF.EXT.cat={items:()=>CAT_IT,conta:()=>CAT_N,cambia:()=>{shown=60;render()}};
 function closeSheet(){sheetName=null;["#sheet","#scrim"].forEach(s=>{const e=$(s);if(e)e.remove()})}
 function mainBox(){
   const L=(AC().main_nomi||[]).filter(r=>!rented(r[0]));if(!L.length)return "";
