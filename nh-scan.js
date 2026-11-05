@@ -171,7 +171,7 @@
     var ul = $("scan-list");
     var ph = $("scan-ph");
     var cnt = $("scan-count");
-    if (cnt) cnt.textContent = list.length + " token" + (state.tokens.length ? "" : " · in attesa dati Hunter");
+    if (cnt) cnt.textContent = list.length + " token" + (state.tokens.length ? "" : " · premi Aggiorna per caricare DexScreener");
     if (!state.tokens.length) {
       if (ul) ul.innerHTML = "";
       if (ph) ph.hidden = false;
@@ -184,7 +184,7 @@
         esc(t.name) + (t.mint ? " · " + esc(t.mint.slice(0, 6)) + "…" + esc(t.mint.slice(-4)) : "") +
         '</div></div><div class="px">' +
         (t.mc != null ? "MC " + nf(t.mc, 0) : "—") +
-        (t.url ? '<div class="nm"><a href="' + esc(t.url) + '" target="_blank" rel="noopener">DexScreener</a></div>' : "") +
+        (function(){var links=[]; if(t.url) links.push('<a href="'+esc(t.url)+'" target="_blank" rel="noopener">DexScreener</a>'); if(t.mint) links.push('<a href="https://solscan.io/token/'+esc(t.mint)+'" target="_blank" rel="noopener">Solscan</a>'); return links.length?'<div class="nm">'+links.join(" · ")+"</div>":"";})() +
         "</div></li>";
     }).join("");
   }
@@ -199,13 +199,39 @@
       var b = el.querySelector("b");
       if (!d || !b) { if (b) b.textContent = "—"; return; }
       var s = (d.strategies && d.strategies[k]) || (k === "v1" ? d.v1 : null);
-      var pnl = s && (s.pnl != null ? s.pnl : (s.pnl_totale != null ? s.pnl_totale : s.total_pnl));
-      var label = pnl != null ? nf(pnl, 2) + " $" : "—";
-      if (warn[k]) label += " ⚠";
+      var pnl = null;
+      if (s) {
+        if (typeof s.pnl === "number") pnl = s.pnl;
+        else if (typeof s.pnl_totale === "number") pnl = s.pnl_totale;
+        else if (typeof s.total_pnl === "number") pnl = s.total_pnl;
+      }
+      var label;
+      if (pnl != null) label = nf(pnl, 2) + " $";
+      else if (k === "v1" && s && s.cycles != null) label = nf(s.cycles, 0) + " cicli";
+      else label = "—";
       b.textContent = label;
+      var sub = el.querySelector(":scope > .stat-sub");
+      if (!sub) {
+        sub = document.createElement("span");
+        sub.className = "stat-sub";
+        sub.style.cssText = "display:block;font-size:11px;color:var(--muted);margin-top:2px";
+        // inserisci prima di eventuali badge
+        el.appendChild(sub);
+      }
+      if (k === "v1" && s && typeof s.trades === "number") {
+        sub.textContent = s.trades + " trade paper";
+      } else if (s && (s.n != null || s.wins != null)) {
+        var nTr = s.n != null ? s.n : 0;
+        var nWin = s.wins != null ? s.wins : 0;
+        sub.textContent = nTr + " trade · " + nWin + " vincenti";
+      } else {
+        sub.textContent = "";
+      }
+      el.querySelectorAll(":scope > .badge").forEach(function (x) { x.remove(); });
+      if (warn[k]) el.insertAdjacentHTML("beforeend", ' <span class="badge">PnL non affidabile</span>');
     });
     if (!d) {
-      if (meta) meta.textContent = "live_mode = false · in attesa di bot_data.public.json";
+      if (meta) meta.textContent = "live_mode = false · bot_data.public.json non caricato";
       if (ph) ph.hidden = false;
       if (ul) ul.innerHTML = "";
       return;
@@ -242,6 +268,36 @@
     if (el) el.textContent = msg || "";
   }
 
+  async function loadScannerFallback() {
+    // Fallback locale se DexScreener non raggiungibile (CORS/rete). Nessuna chiave.
+    try {
+      var r = await fetch(PAPER.scanner + "?t=" + Date.now(), { credentials: "omit", cache: "no-store" });
+      if (!r.ok) return [];
+      var j = await r.json();
+      var toks = (j && j.tokens) || {};
+      return Object.keys(toks).map(function (m) {
+        var t = toks[m] || {};
+        return {
+          mint: t.mint || m,
+          sym: t.sym || "?",
+          name: t.name || "",
+          mc: t.mc,
+          vol: t.vol,
+          h1: t.h1,
+          price: t.price,
+          dex: t.dex || "",
+          chain: "solana",
+          bonding: t.dex === "pumpfun",
+          url: t.url || ("https://dexscreener.com/solana/" + (t.mint || m)),
+          score: t.score,
+          risks: t.risks || [],
+          ok: t.ok,
+          _fallback: true
+        };
+      });
+    } catch (e) { return []; }
+  }
+
   async function refreshScan() {
     setStatus("Carico DexScreener (bonding curve)…");
     $("scan-refresh").disabled = true;
@@ -272,13 +328,28 @@
         return (b.vol || 0) - (a.vol || 0);
       });
       var nBond = state.tokens.filter(function (t) { return t.bonding; }).length;
-      setStatus(state.tokens.length
-        ? (state.tokens.length + " Solana · " + nBond + " ancora in bonding (pumpfun)")
-        : "Nessun dato (rete/CORS?). Prova di nuovo o usa lo snapshot scanner.json.");
+      if (!state.tokens.length) {
+        var fb = await loadScannerFallback();
+        if (fb.length) {
+          state.tokens = fb;
+          nBond = state.tokens.filter(function (t) { return t.bonding || t.dex === "pumpfun"; }).length;
+          setStatus("CORS/rete: fallback snapshot scanner.json · " + state.tokens.length + " token · " + nBond + " bonding");
+        } else {
+          setStatus("Nessun dato (rete/CORS?) e snapshot scanner.json vuoto.");
+        }
+      } else {
+        setStatus(state.tokens.length + " Solana · " + nBond + " ancora in bonding (pumpfun)");
+      }
       renderScan();
     } catch (e) {
-      setStatus("Scan fallito in modo controllato. Placeholder attivo.");
-      state.tokens = [];
+      var fb2 = await loadScannerFallback();
+      if (fb2.length) {
+        state.tokens = fb2;
+        setStatus("Scan fallito · fallback scanner.json (" + state.tokens.length + " token)");
+      } else {
+        setStatus("Scan fallito in modo controllato. Placeholder attivo.");
+        state.tokens = [];
+      }
       renderScan();
     }
     $("scan-refresh").disabled = false;
@@ -332,6 +403,7 @@
     loadPaperBot: loadPaperBot,
     renderStrategies: renderStrategies,
     renderScan: renderScan,
+    loadScannerFallback: loadScannerFallback,
     getState: function () { return state; }
   };
   window.NHScan = NHScan;

@@ -56,8 +56,8 @@ footer{margin-top:28px;color:var(--muted);font-size:12px}
 <div class="wrap">
 <nav><a href="index.html">← Catalogo</a><a href="moon.html">Moon / Relics</a></nav>
 <h1>Scan token e strategie</h1>
-<p class="hint">Vista in <b>sola lettura</b>: scan DexScreener / pump.fun (bonding curve) e carte paper copy / reentry / arb / v1. Nessun wallet, nessuna chiave, nessun trade live.</p>
-<div class="notice"><span class="badge ro">read-only</span> <span class="badge">live_mode = false</span> I dati live e il motore a carta arriveranno da Hunter. Qui c’è solo lo scaffold UI + stub pubblici.</div>
+<p class="hint">Vista in <b>sola lettura</b>: scan DexScreener / pump.fun (bonding curve) e carte paper copy / reentry / arb / snipe / confluence / v1. Nessun wallet, nessuna chiave, nessun trade live.</p>
+<div class="notice"><span class="badge ro">read-only</span> <span class="badge">live_mode = false</span> Dati da DexScreener (pubblico) e snapshot paper <code>bot_data.public.json</code>. Nessun wallet, nessun trade live. Se la rete fallisce, fallback su <code>scanner.json</code>.</div>
 
 <div class="tabs" role="tablist" aria-label="Sezioni">
   <button type="button" class="tab" role="tab" id="tab-scan" aria-selected="true" aria-controls="panel-scan">Scan token</button>
@@ -83,31 +83,33 @@ footer{margin-top:28px;color:var(--muted);font-size:12px}
       </select>
       <button type="button" class="nhf-dir" id="scan-dir" data-dir="1" title="Direzione">↓</button>
     </div>
-    <div class="nhf-count" id="scan-count">0 token · in attesa dati Hunter</div>
+    <div class="nhf-count" id="scan-count">0 token · premi Aggiorna per caricare DexScreener</div>
   </div>
   <div class="actions">
-    <button type="button" class="btn" id="scan-refresh">Aggiorna stub DexScreener</button>
+    <button type="button" class="btn" id="scan-refresh">Aggiorna DexScreener</button>
     <button type="button" class="btn ghost" id="scan-clear" disabled>Svuota</button>
   </div>
   <div id="scan-status" class="hint" aria-live="polite"></div>
   <ul class="list" id="scan-list" data-nhfno></ul>
-  <div class="ph" id="scan-ph">In attesa dati Hunter — collegare fetch DexScreener nello stub <code>NHScan.fetchProfiles</code>.</div>
+  <div class="ph" id="scan-ph">Nessun token ancora. Premi «Aggiorna» (DexScreener) oppure verrà usato lo snapshot <code>scanner.json</code> se la rete fallisce.</div>
 </section>
 
 <section id="panel-carte" class="panel" role="tabpanel" aria-labelledby="tab-carte" hidden>
   <h2>Strategie a carta <span class="badge ro">paper · simulazione</span></h2>
-  <p class="hint">Carte copy / reentry / arb / v1 in sola lettura. PnL paper; badge «PnL non affidabile» se i dati sono sospetti (vedi handoff Hunter).</p>
+  <p class="hint">Carte copy / reentry / arb / snipe / confluence / v1 in sola lettura. PnL paper; badge «PnL non affidabile» su copy/reentry (bug PUMP 28/10).</p>
   <div class="grid" id="carte-stats">
     <div class="stat" data-strat="copy"><b>—</b><span>copy</span></div>
     <div class="stat" data-strat="reentry"><b>—</b><span>reentry</span></div>
     <div class="stat" data-strat="arb"><b>—</b><span>arb</span></div>
+    <div class="stat" data-strat="snipe"><b>—</b><span>snipe</span></div>
+    <div class="stat" data-strat="confluence"><b>—</b><span>confluence</span></div>
     <div class="stat" data-strat="v1"><b>—</b><span>v1</span></div>
   </div>
   <div class="card">
     <div class="k">Stato motore</div>
-    <div class="meta" id="carte-meta">live_mode = false · in attesa di <code>bot_data.json</code> / snapshot pubblico da Hunter</div>
+    <div class="meta" id="carte-meta">live_mode = false · carica <code>bot_data.public.json</code>…</div>
   </div>
-  <div class="ph" id="carte-ph">In attesa dati Hunter — collegare <code>NHScan.loadPaperBot</code> allo snapshot pubblico (senza secret).</div>
+  <div class="ph" id="carte-ph">Snapshot non trovato — verifica <code>bot_data.public.json</code> sul branch.</div>
   <ul class="list" id="carte-list" data-nhfno></ul>
 </section>
 
