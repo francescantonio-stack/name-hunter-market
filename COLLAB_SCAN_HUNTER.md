@@ -44,3 +44,7 @@ In `nh-scan.js` / `window.NHScan`:
 - App Windows / APK Android  
 - Documento Notion principale  
 - Trade live
+
+## Aggiornamento Hunter 2026-11-05 20:25 Europe/Rome
+- Aggiunti `bot_data.public.json`, `scanner.json`, `config.public.json` (no secret, live_mode false).
+- `nh-scan.js`: normalizePair shape scanner, preferenza pumpfun, batch 60 mint, renderStrategies con `pnl_warning` e open_positions dict.

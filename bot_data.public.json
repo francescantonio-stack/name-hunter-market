@@ -1,0 +1,3170 @@
+{
+  "updated": "2026-11-05T15:11:00+0100",
+  "version": "v2",
+  "live_mode": false,
+  "events": [
+    {
+      "t": "2026-11-05T13:03:04Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "TjdZ3H6nbVr3vC9nvxtmqa5fohP3b8ZVkzBtZY5ARwpYGzmcxM9U4ARU1aEhpszVgeh53Vq2mQ33Rfzk6onDTF4",
+      "tx": "TjdZ3H6nbVr3vC9nvxtmqa5fohP3b8ZVkzBtZY5ARwpYGzmcxM9U4ARU1aEhpszVgeh53Vq2mQ33Rfzk6onDTF4"
+    },
+    {
+      "t": "2026-11-05T13:03:04Z",
+      "wallet": "Mitch",
+      "mint": "CSRRgTwf9o5KLgguS2M16aEAhV5PUUzfshrAAQ8opump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "4A5ftDCHM1q9ZqUku2Hx6mCLhLVaTNYsURhFWFg4PYVWgMJCzppgmhai3TnALxU2jn4gCoJTg11Jrhr7cv29ro17",
+      "tx": "4A5ftDCHM1q9ZqUku2Hx6mCLhLVaTNYsURhFWFg4PYVWgMJCzppgmhai3TnALxU2jn4gCoJTg11Jrhr7cv29ro17"
+    },
+    {
+      "t": "2026-11-05T13:03:05Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "4NvyBHuvrFdpPXXQtk86TbMvwQgpCKCmQRW3kvCmMdDiBEYBVbH28GJgnSTvGoDLfVqveR6u3WmBTYzDAGbGi2ER",
+      "tx": "4NvyBHuvrFdpPXXQtk86TbMvwQgpCKCmQRW3kvCmMdDiBEYBVbH28GJgnSTvGoDLfVqveR6u3WmBTYzDAGbGi2ER"
+    },
+    {
+      "t": "2026-11-05T13:03:06Z",
+      "wallet": "Mr. Frog",
+      "mint": "79uf3h1sPaey43opa1i64kdMaLGHfn8ygawKsaxWpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "3YT2h2mUguzEPJyQJZykNLTxWcZ5QjFKtGCbHKftadcEx45LQZXcNzVnTaVoCMZnWMaNMPw3DVv6XfuixoDDMXBn",
+      "tx": "3YT2h2mUguzEPJyQJZykNLTxWcZ5QjFKtGCbHKftadcEx45LQZXcNzVnTaVoCMZnWMaNMPw3DVv6XfuixoDDMXBn"
+    },
+    {
+      "t": "2026-11-05T13:03:06Z",
+      "wallet": "Mr. Frog",
+      "mint": "4QhDC8vdstg8X25FabeRqnkhRr7oouvvwjJ2zLcQpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "2jMphepyzrybcbqzfSvDYAkaNmQwqVb2arPZy7zsG2F5Yf22mVqyk1MJVxb8FG99fAhSyNqKanQ7ugRuktdg5qeS",
+      "tx": "2jMphepyzrybcbqzfSvDYAkaNmQwqVb2arPZy7zsG2F5Yf22mVqyk1MJVxb8FG99fAhSyNqKanQ7ugRuktdg5qeS"
+    },
+    {
+      "t": "2026-11-05T13:03:06Z",
+      "wallet": "Mr. Frog",
+      "mint": "CmuCU2UDGVtNBdq3jbsfEAfJBVFXDg8geFTdNgh3pump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "2vrExfR4V4ehXhyYPbxnYkj4nxDo4b4t3RHriZbsmXe41YVMbajMuhkLJDQYKF2VDbgQUHLcTw2NUyMgZm5g6EBt",
+      "tx": "2vrExfR4V4ehXhyYPbxnYkj4nxDo4b4t3RHriZbsmXe41YVMbajMuhkLJDQYKF2VDbgQUHLcTw2NUyMgZm5g6EBt"
+    },
+    {
+      "t": "2026-11-05T13:03:07Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "52UW54o6H44BmtrJ9rKbHEBALExrJ2oSMd7aqBKxiJHi4ER6CtwU4Unp2mkNvTWWsc6E9p4ZAc74A7xaQsZQXtfe",
+      "tx": "52UW54o6H44BmtrJ9rKbHEBALExrJ2oSMd7aqBKxiJHi4ER6CtwU4Unp2mkNvTWWsc6E9p4ZAc74A7xaQsZQXtfe"
+    },
+    {
+      "t": "2026-11-05T13:03:07Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "S2ztmXBja3fNYDeFGmXVxoFn4D2VadexD4gJycTuRNTLBGkBngCjxM6zMcehoyYh3Jis1MHpnkL1KYP9vpgJ4bw",
+      "tx": "S2ztmXBja3fNYDeFGmXVxoFn4D2VadexD4gJycTuRNTLBGkBngCjxM6zMcehoyYh3Jis1MHpnkL1KYP9vpgJ4bw"
+    },
+    {
+      "t": "2026-11-05T13:03:08Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "4ko8ou7uNhgWqFGwXzQY8qPFLmxUQhXgzKSRMW3goLbizhPsyNtHEcZHk3JM3NYWpY3Zbqb5aLS735wy6jHarDor",
+      "tx": "4ko8ou7uNhgWqFGwXzQY8qPFLmxUQhXgzKSRMW3goLbizhPsyNtHEcZHk3JM3NYWpY3Zbqb5aLS735wy6jHarDor"
+    },
+    {
+      "t": "2026-11-05T13:03:08Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "2dx2SXfrFdLaGBi5nY4wFYJstiztUhyKNYRY3D2wYmheYacwgdHBY4qHHfarzi44xWZxYC1koGvVLHuGwKu8SbgR",
+      "tx": "2dx2SXfrFdLaGBi5nY4wFYJstiztUhyKNYRY3D2wYmheYacwgdHBY4qHHfarzi44xWZxYC1koGvVLHuGwKu8SbgR"
+    },
+    {
+      "t": "2026-11-05T13:03:08Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "uTPJvrYSUK36cZF2uidXoGEwv3gzcYcpDDxJAZqLGuYt8ya4n9SG1eyVEBU4GD1Q1mRHYNonAKC1pi4WKd9J7M3",
+      "tx": "uTPJvrYSUK36cZF2uidXoGEwv3gzcYcpDDxJAZqLGuYt8ya4n9SG1eyVEBU4GD1Q1mRHYNonAKC1pi4WKd9J7M3"
+    },
+    {
+      "t": "2026-11-05T13:03:10Z",
+      "wallet": "EustazZ",
+      "mint": "2s4cWfEUiUx7KhBhmJAGE1217JR69zdnoHNwoJ34pump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "buy",
+      "sig": "3ZZKasG49LAAJRHkVXgRo52RvmBdpHYrJJ9rPu3Wg7gJs3n83xL5EEKGfTj72iLT1ELFysvwzrLYUC9UFzFNNxjt",
+      "tx": "3ZZKasG49LAAJRHkVXgRo52RvmBdpHYrJJ9rPu3Wg7gJs3n83xL5EEKGfTj72iLT1ELFysvwzrLYUC9UFzFNNxjt"
+    },
+    {
+      "t": "2026-11-05T13:03:10Z",
+      "wallet": "EustazZ",
+      "mint": "2s4cWfEUiUx7KhBhmJAGE1217JR69zdnoHNwoJ34pump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "2ai4gLb9Zx7Pnn6fMGWSo5iC1GwTR4ppCqB92LQ7MYe5kvp7tAKYpmGDQ5EgU1KsupeqeguRyGAWiQH8g65CyaMr",
+      "tx": "2ai4gLb9Zx7Pnn6fMGWSo5iC1GwTR4ppCqB92LQ7MYe5kvp7tAKYpmGDQ5EgU1KsupeqeguRyGAWiQH8g65CyaMr"
+    },
+    {
+      "t": "2026-11-05T13:03:11Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "3vkeupUVhxWEgbfkbs217bvEqEzzS8SJWDfKDhFQicieJx9xbE1AaLMbhtUF5NusXMK6TPhr9C7KAxcy2XypxRYU",
+      "tx": "3vkeupUVhxWEgbfkbs217bvEqEzzS8SJWDfKDhFQicieJx9xbE1AaLMbhtUF5NusXMK6TPhr9C7KAxcy2XypxRYU"
+    },
+    {
+      "t": "2026-11-05T13:03:11Z",
+      "wallet": "EustazZ",
+      "mint": "BkTQBoVKCfQB195KCfePWvDm9ESDA8vDPxff53ugC9EF",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "buy",
+      "sig": "2RshkkVvATLZb8ujCQafr4eTBsJ6Li2zCbXyg9hBTWNx27BHkfkF54iy1GmbQUDG8HgFKxJBdksCovg5u4vqk8eM",
+      "tx": "2RshkkVvATLZb8ujCQafr4eTBsJ6Li2zCbXyg9hBTWNx27BHkfkF54iy1GmbQUDG8HgFKxJBdksCovg5u4vqk8eM"
+    },
+    {
+      "t": "2026-11-05T13:03:12Z",
+      "wallet": "EustazZ",
+      "mint": "BkTQBoVKCfQB195KCfePWvDm9ESDA8vDPxff53ugC9EF",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "2zKZ48VpJ385nsN3cSQs27P4zcXAQEKNBjj5ZkXC6J8RESTYG47XKwJV4XfquchSp18mn2knvnJtaw9g8dXTL2mT",
+      "tx": "2zKZ48VpJ385nsN3cSQs27P4zcXAQEKNBjj5ZkXC6J8RESTYG47XKwJV4XfquchSp18mn2knvnJtaw9g8dXTL2mT"
+    },
+    {
+      "t": "2026-11-05T13:03:12Z",
+      "wallet": "EustazZ",
+      "mint": "5wTojRG6PN4CFNPh7ebFgsuaiMJDo6CacLbH7fY8pump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "buy",
+      "sig": "4xB87StzSC7yUA7Q9LfMAggNKjn7SsH9e2JZH2mttJYgax8xmhMrBwoeYHSbsWhD6j43gnqor6xmm4q5QQrYACwB",
+      "tx": "4xB87StzSC7yUA7Q9LfMAggNKjn7SsH9e2JZH2mttJYgax8xmhMrBwoeYHSbsWhD6j43gnqor6xmm4q5QQrYACwB"
+    },
+    {
+      "t": "2026-11-05T13:03:12Z",
+      "wallet": "EustazZ",
+      "mint": "5wTojRG6PN4CFNPh7ebFgsuaiMJDo6CacLbH7fY8pump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "cFPHMGRjnPYRQDGxfvv3qHRhQKLEw9LLCYGaWDSk8SzgSbQpehJRZjKiY9LepvVnKFJkEk3pJtRgim43bcebJoq",
+      "tx": "cFPHMGRjnPYRQDGxfvv3qHRhQKLEw9LLCYGaWDSk8SzgSbQpehJRZjKiY9LepvVnKFJkEk3pJtRgim43bcebJoq"
+    },
+    {
+      "t": "2026-11-05T13:04:31Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "2dMQksRP1LGSaT2rJu69xkFT5SVxZrky72smEwYPKqFtwp8a1PhM1JRfs61pkyg7iHZy5NnJbkqtvhaVuuksFAE",
+      "tx": "2dMQksRP1LGSaT2rJu69xkFT5SVxZrky72smEwYPKqFtwp8a1PhM1JRfs61pkyg7iHZy5NnJbkqtvhaVuuksFAE"
+    },
+    {
+      "t": "2026-11-05T13:05:46Z",
+      "wallet": "EustazZ",
+      "mint": "27FQQbhmd1243pB3kV6bfjgEfXRGdwCvCPDeRQhSpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "buy",
+      "sig": "4Qbz2nWBF6woqK9uPHpj1WMXFG62djM44JrUws6c2F4r3P5HFtQxSU78NoEDLtEy5dp2bFkA8PdGyudWJtkH3aE2",
+      "tx": "4Qbz2nWBF6woqK9uPHpj1WMXFG62djM44JrUws6c2F4r3P5HFtQxSU78NoEDLtEy5dp2bFkA8PdGyudWJtkH3aE2"
+    },
+    {
+      "t": "2026-11-05T13:05:47Z",
+      "wallet": "EustazZ",
+      "mint": "27FQQbhmd1243pB3kV6bfjgEfXRGdwCvCPDeRQhSpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "4BHa3N4VNcdtcCwShqX15JAs4y3eqfokpVgVFta5aav8znVZDLJdrhb39LCDZCpLf6CcvZGBrgyuz8xxg3nzHv2r",
+      "tx": "4BHa3N4VNcdtcCwShqX15JAs4y3eqfokpVgVFta5aav8znVZDLJdrhb39LCDZCpLf6CcvZGBrgyuz8xxg3nzHv2r"
+    },
+    {
+      "t": "2026-11-05T13:10:09Z",
+      "wallet": "EustazZ",
+      "mint": "42XkMa3sPratiLwTTPHw1bD4YeFTR8Jc9Y94MRJrpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "buy",
+      "sig": "2Gw9iiMo7aj9Qx21oK1SZwcc8hAVePs5X1eA486iicUsHUg8BjtUt3eZiRjzxzJsH2AegbAvVZ6yiMA5rjTfXj4U",
+      "tx": "2Gw9iiMo7aj9Qx21oK1SZwcc8hAVePs5X1eA486iicUsHUg8BjtUt3eZiRjzxzJsH2AegbAvVZ6yiMA5rjTfXj4U"
+    },
+    {
+      "t": "2026-11-05T13:10:09Z",
+      "wallet": "EustazZ",
+      "mint": "42XkMa3sPratiLwTTPHw1bD4YeFTR8Jc9Y94MRJrpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "2KpBDctiDFUTDMqfaw3HaiPmFdzK1P3A8UXQMNfjWChzgX37yTS5H3gRVRNHJmaCj5DKrNrh7kEoZ5P7zm155fQQ",
+      "tx": "2KpBDctiDFUTDMqfaw3HaiPmFdzK1P3A8UXQMNfjWChzgX37yTS5H3gRVRNHJmaCj5DKrNrh7kEoZ5P7zm155fQQ"
+    },
+    {
+      "t": "2026-11-05T13:10:10Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "4o95AXoEVqf2HMk54Z2tdF1tj3GvutReUtn4r57UFz7UArXcZ88XUtvkVrGAj9kBMHxiiKP5wqH9Hd7R9diaAU68",
+      "tx": "4o95AXoEVqf2HMk54Z2tdF1tj3GvutReUtn4r57UFz7UArXcZ88XUtvkVrGAj9kBMHxiiKP5wqH9Hd7R9diaAU68"
+    },
+    {
+      "t": "2026-11-05T13:10:10Z",
+      "wallet": "EustazZ",
+      "mint": "Fo6wD8HTUaWqVcKte3u3u1PufsCkWkbR5iJbn6Lcpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "buy",
+      "sig": "38gjtXRyvLF1xvp9KrH49GGzYdNK99MBQ4CQ86wGLCbaioAA4NCk7MkyS1Kac2hiRTrvFHXGSnTWSgZvxri7Xw5T",
+      "tx": "38gjtXRyvLF1xvp9KrH49GGzYdNK99MBQ4CQ86wGLCbaioAA4NCk7MkyS1Kac2hiRTrvFHXGSnTWSgZvxri7Xw5T"
+    },
+    {
+      "t": "2026-11-05T14:08:18Z",
+      "wallet": "Numer0",
+      "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "36HDZcrRB6keNPg3FUMBL2yMiGy19ECztZBE6mNqbPPnSPJq8GjMqVTgeFYB6CjWdmsv8ifXVuZeTfHiPagwSiFm",
+      "tx": "36HDZcrRB6keNPg3FUMBL2yMiGy19ECztZBE6mNqbPPnSPJq8GjMqVTgeFYB6CjWdmsv8ifXVuZeTfHiPagwSiFm"
+    },
+    {
+      "t": "2026-11-05T14:08:18Z",
+      "wallet": "Numer0",
+      "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "5TCpc36Z76DuQADPZJMP96dGFS1z11LBpaFSLDTXAFiDGvjAW3JCCsCCBtRCLM2Ng64LYmsAi7yTZU4ngw4JHu6X",
+      "tx": "5TCpc36Z76DuQADPZJMP96dGFS1z11LBpaFSLDTXAFiDGvjAW3JCCsCCBtRCLM2Ng64LYmsAi7yTZU4ngw4JHu6X"
+    },
+    {
+      "t": "2026-11-05T14:08:18Z",
+      "wallet": "Numer0",
+      "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "4xzeW4vrFj33rthGWYGtTtvuLJ9zgLeVRXN26MtaujhPXFv4Ksyi8DRjVmrF5D2Sg8jKcmQekFi63J5GiREEo9Ur",
+      "tx": "4xzeW4vrFj33rthGWYGtTtvuLJ9zgLeVRXN26MtaujhPXFv4Ksyi8DRjVmrF5D2Sg8jKcmQekFi63J5GiREEo9Ur"
+    },
+    {
+      "t": "2026-11-05T14:08:19Z",
+      "wallet": "Numer0",
+      "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "2cHcKtUX3usS3hhGTqsea6m1chJCt8292v9UYVQwx1qi5mtDFUpeq9nkyeKsiii9b34yz7re6FfWJH1Y1MUWBgwH",
+      "tx": "2cHcKtUX3usS3hhGTqsea6m1chJCt8292v9UYVQwx1qi5mtDFUpeq9nkyeKsiii9b34yz7re6FfWJH1Y1MUWBgwH"
+    },
+    {
+      "t": "2026-11-05T14:08:19Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "4rkifxD52y7LSwbNje3rcLGQ5LsUbCXjBBS5c1bRzSbxz2e9MTLrpK3knGRrwbjDsnMPXUim67V6JqZ3VtxDGGCz",
+      "tx": "4rkifxD52y7LSwbNje3rcLGQ5LsUbCXjBBS5c1bRzSbxz2e9MTLrpK3knGRrwbjDsnMPXUim67V6JqZ3VtxDGGCz"
+    },
+    {
+      "t": "2026-11-05T14:08:20Z",
+      "wallet": "Mitch",
+      "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "5rCnpCRKN7dtzUuDiGBPfdbZN2CAWUiT7sJM8im4DiquA8XLG3ni3n8ozPjogc2GjSQA6peDER7PD7Fr6W2Ywv98",
+      "tx": "5rCnpCRKN7dtzUuDiGBPfdbZN2CAWUiT7sJM8im4DiquA8XLG3ni3n8ozPjogc2GjSQA6peDER7PD7Fr6W2Ywv98"
+    },
+    {
+      "t": "2026-11-05T14:08:21Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "DJN1NcVAoV1akJ1uGnv1o62dcb3zeeAZBiL21Ts2HXx442a6ejj6qNnMLaVC9WEF2ZSUu5N4mZ7sbWXbPRGnwgU",
+      "tx": "DJN1NcVAoV1akJ1uGnv1o62dcb3zeeAZBiL21Ts2HXx442a6ejj6qNnMLaVC9WEF2ZSUu5N4mZ7sbWXbPRGnwgU"
+    },
+    {
+      "t": "2026-11-05T14:08:23Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "3xgEPwtDC5XXPcXXKFJKHnQa62UYWdMZ3kg5udwFJecRgMxseadMH8p8RtNSBPDjk5NvoEou7VtNv7gpPuYvDrGk",
+      "tx": "3xgEPwtDC5XXPcXXKFJKHnQa62UYWdMZ3kg5udwFJecRgMxseadMH8p8RtNSBPDjk5NvoEou7VtNv7gpPuYvDrGk"
+    },
+    {
+      "t": "2026-11-05T14:08:24Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "3wvcq5GsvBEqVMiKC3P8gmuE6pxpf6tsMGzm9br6DZuMazmdR2qKfLqm9psL5N9gcTb4bvNBUKqWhmS9DLHpdnV9",
+      "tx": "3wvcq5GsvBEqVMiKC3P8gmuE6pxpf6tsMGzm9br6DZuMazmdR2qKfLqm9psL5N9gcTb4bvNBUKqWhmS9DLHpdnV9"
+    },
+    {
+      "t": "2026-11-05T14:08:25Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "2W7x2Fs6hkDK6Eyq6ahef6fSLMJYFS3B32vhNwNVuzEeAFC6f7TnFJQabX3sQ412tU2gUV8DCfnDyxG6y8PuDoTB",
+      "tx": "2W7x2Fs6hkDK6Eyq6ahef6fSLMJYFS3B32vhNwNVuzEeAFC6f7TnFJQabX3sQ412tU2gUV8DCfnDyxG6y8PuDoTB"
+    },
+    {
+      "t": "2026-11-05T14:08:25Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "ue779TWUyUaJui5dgjY7LM5QWsC4nqvwny4sFVPHttAejwwce7NRYhmEyJovdHp3GErKGw9mSxT3eNS4n1M4CcW",
+      "tx": "ue779TWUyUaJui5dgjY7LM5QWsC4nqvwny4sFVPHttAejwwce7NRYhmEyJovdHp3GErKGw9mSxT3eNS4n1M4CcW"
+    },
+    {
+      "t": "2026-11-05T14:08:26Z",
+      "wallet": "Mitch",
+      "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "4MFMixm51S3Nn64XgV4SAiJQfdBZaBmHtXjzgf1XExR1yR366QQ1Nm9hHUyfACweDKcicqJy3FSF7xXspMqmv2wa",
+      "tx": "4MFMixm51S3Nn64XgV4SAiJQfdBZaBmHtXjzgf1XExR1yR366QQ1Nm9hHUyfACweDKcicqJy3FSF7xXspMqmv2wa"
+    },
+    {
+      "t": "2026-11-05T14:08:28Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "kTdNnxzkNdgxEWnsb11f7suA6nv4oixvpCrSSqj6eCJJPZBkbcVFEzi8XsLjmkRaC8yoMk2x3dMZJmtNqyY2swr",
+      "tx": "kTdNnxzkNdgxEWnsb11f7suA6nv4oixvpCrSSqj6eCJJPZBkbcVFEzi8XsLjmkRaC8yoMk2x3dMZJmtNqyY2swr"
+    },
+    {
+      "t": "2026-11-05T14:08:28Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "2LRJtdH752V5gvVM4e7JquqWNWf8DcW2Tb7hoaFPgPh5WW9W3prx8RiQAEca3DyTdeQVMwzNFy944VLFzhSYk964",
+      "tx": "2LRJtdH752V5gvVM4e7JquqWNWf8DcW2Tb7hoaFPgPh5WW9W3prx8RiQAEca3DyTdeQVMwzNFy944VLFzhSYk964"
+    },
+    {
+      "t": "2026-11-05T14:08:29Z",
+      "wallet": "EustazZ",
+      "mint": "AMD8XwJXgQ9WV45Wyj9yFLejxzf2J6VM1PJY8bJEjeES",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "2vEk9U56jvrES1iftuhqvANp9y2sYnk2EgmeMabEH4oidy9xEvjapoTP4oUL5mk5hRwKxJJGJcLYZ85tfteyd4MF",
+      "tx": "2vEk9U56jvrES1iftuhqvANp9y2sYnk2EgmeMabEH4oidy9xEvjapoTP4oUL5mk5hRwKxJJGJcLYZ85tfteyd4MF"
+    },
+    {
+      "t": "2026-11-05T14:08:29Z",
+      "wallet": "EustazZ",
+      "mint": "6WntEsHt6E2WKUYDQHnmnBGJUp9xmi1hW7BsUEMbpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "5SRHoN86X1cBhVyM4Ly5cTnaPDLWijmGRGLoJyFHPsXzPa8h6dG1Ykf9LTnCLJX8Z1CmLTWoWqB2cfErUQaz5YGt",
+      "tx": "5SRHoN86X1cBhVyM4Ly5cTnaPDLWijmGRGLoJyFHPsXzPa8h6dG1Ykf9LTnCLJX8Z1CmLTWoWqB2cfErUQaz5YGt"
+    },
+    {
+      "t": "2026-11-05T14:08:30Z",
+      "wallet": "EustazZ",
+      "mint": "61Kdx9gFXExaw4s2pTQJxbQ4u8MhJv67pGsDeNuBpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "buy",
+      "sig": "5jpYGUSZEW2z9iKsyuxkQ1ZhbzMB13pqiyfWzQLz7ukA7pLcNz7wxVpCaji7GzcTuswMAuPbZyjvxeWMDrASsfww",
+      "tx": "5jpYGUSZEW2z9iKsyuxkQ1ZhbzMB13pqiyfWzQLz7ukA7pLcNz7wxVpCaji7GzcTuswMAuPbZyjvxeWMDrASsfww"
+    },
+    {
+      "t": "2026-11-05T14:08:31Z",
+      "wallet": "EustazZ",
+      "mint": "61Kdx9gFXExaw4s2pTQJxbQ4u8MhJv67pGsDeNuBpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "4DEoz3Zgs5UprKudXGQ92yokBeBUtMEq1dVRtzq1HxHnrHE9PpuxFUMQgbZCtYT24htSxxS85RmTZTQP1F9rFq3S",
+      "tx": "4DEoz3Zgs5UprKudXGQ92yokBeBUtMEq1dVRtzq1HxHnrHE9PpuxFUMQgbZCtYT24htSxxS85RmTZTQP1F9rFq3S"
+    },
+    {
+      "t": "2026-11-05T14:08:32Z",
+      "wallet": "EustazZ",
+      "mint": "4nQqYeHziRZaiYLodVt56q9AyubY693oGnSPXYcNpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "buy",
+      "sig": "3MGtByz3ToxBM8oCnKT4syMwUsUCa41o519QT4ksQPJEpoxQT3GHB5RLVeSyzy82AquiXcYNVQBrcG7GWVn7MqhY",
+      "tx": "3MGtByz3ToxBM8oCnKT4syMwUsUCa41o519QT4ksQPJEpoxQT3GHB5RLVeSyzy82AquiXcYNVQBrcG7GWVn7MqhY"
+    },
+    {
+      "t": "2026-11-05T14:08:32Z",
+      "wallet": "EustazZ",
+      "mint": "4nQqYeHziRZaiYLodVt56q9AyubY693oGnSPXYcNpump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "2m7BThfrZwYyT6yZnHL85oxZQb3UeVZ6QGmDsa5qaHMmpg6nDE2sBwvng1RaCfHE7ipVLQ6VwwbuXqDMef3XkCMR",
+      "tx": "2m7BThfrZwYyT6yZnHL85oxZQb3UeVZ6QGmDsa5qaHMmpg6nDE2sBwvng1RaCfHE7ipVLQ6VwwbuXqDMef3XkCMR"
+    },
+    {
+      "t": "2026-11-05T14:08:32Z",
+      "wallet": "EustazZ",
+      "mint": "CMwkwsN9qi9PPWtfW9WgT2mtiMxKgr88e8B4FG6opump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "buy",
+      "sig": "5ZE4vu37zGudy1yrQY2gK3m3KZfWAiyGVysfMTj9uSDnhP2ovofQNkLC7gyvmYYhXq3GopxtXXyfvA6NXaMPcenD",
+      "tx": "5ZE4vu37zGudy1yrQY2gK3m3KZfWAiyGVysfMTj9uSDnhP2ovofQNkLC7gyvmYYhXq3GopxtXXyfvA6NXaMPcenD"
+    },
+    {
+      "t": "2026-11-05T14:08:33Z",
+      "wallet": "EustazZ",
+      "mint": "2hEwrdEv1R9h5PJMs18C2W9BsHmCczrEvrLLBSM7pump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "54UEpjFTmFwyBJGrLn49R6zefNRYrBs5XnMGQtr9zRfoEd4bAFQCPNmYs3cbtLcAT3FwAxD6BhnMasownTiU6fCS",
+      "tx": "54UEpjFTmFwyBJGrLn49R6zefNRYrBs5XnMGQtr9zRfoEd4bAFQCPNmYs3cbtLcAT3FwAxD6BhnMasownTiU6fCS"
+    },
+    {
+      "t": "2026-11-05T14:09:08Z",
+      "wallet": "Mitch",
+      "mint": "Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "2qtcmHi9tZxPPJXtZwsrFJAVjaXx9VHzTWXiBHxDjqwEJa4b2JCiyJKX1TqYTh8wqsi3mf5hZgmRXAbyoLMkwaEG",
+      "tx": "2qtcmHi9tZxPPJXtZwsrFJAVjaXx9VHzTWXiBHxDjqwEJa4b2JCiyJKX1TqYTh8wqsi3mf5hZgmRXAbyoLMkwaEG"
+    },
+    {
+      "t": "2026-11-05T14:09:09Z",
+      "wallet": "EustazZ",
+      "mint": "CMwkwsN9qi9PPWtfW9WgT2mtiMxKgr88e8B4FG6opump",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "sell",
+      "sig": "51ZKAKT3mLp6jKFSEiwB2tdrJHs6RsCRJXGe7VrYZjN7WvRu55M25j5XFrJiRw5cMJJc9Rcm6X4R2jiJ6YYfRUC1",
+      "tx": "51ZKAKT3mLp6jKFSEiwB2tdrJHs6RsCRJXGe7VrYZjN7WvRu55M25j5XFrJiRw5cMJJc9Rcm6X4R2jiJ6YYfRUC1"
+    },
+    {
+      "t": "2026-11-05T14:10:23Z",
+      "wallet": "Numer0",
+      "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+      "sym": "?",
+      "px": null,
+      "liq": 0,
+      "rug_ok": null,
+      "action": "transfer_in",
+      "sig": "nV46nYB3W3WFETTXHgHLrcdfesBimyd3uw7ziadtMKinTL35ftraCB9wqqdHxiGPihZEvstg1yMoQUfEaKj89Pp",
+      "tx": "nV46nYB3W3WFETTXHgHLrcdfesBimyd3uw7ziadtMKinTL35ftraCB9wqqdHxiGPihZEvstg1yMoQUfEaKj89Pp"
+    }
+  ],
+  "trades": [
+    {
+      "t": "2026-10-16T19:37:21Z",
+      "sym": "SILLY.EXE",
+      "mint": "DTsfJ3GM8SeXBv6zH9GMANDRnWrLqEn9eb9XXULppump",
+      "wallet": "Numer0",
+      "entry_px": 0.0002299,
+      "last_px": 0.0002299,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-16T20:33:25Z",
+      "sym": "MIC",
+      "mint": "CzL38rjt7v4N6CuYZWAZ6JNRaJCGdyzBUbtYu8F3pump",
+      "wallet": "Numer0",
+      "entry_px": 8.614e-05,
+      "last_px": 8.614e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-16T20:36:53Z",
+      "sym": "SILLY.EXE",
+      "mint": "DTsfJ3GM8SeXBv6zH9GMANDRnWrLqEn9eb9XXULppump",
+      "wallet": "",
+      "entry_px": 0.0002299,
+      "last_px": 0.0003333,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 0.41241148325358856
+    },
+    {
+      "t": "2026-10-16T20:41:27Z",
+      "sym": "MIC",
+      "mint": "CzL38rjt7v4N6CuYZWAZ6JNRaJCGdyzBUbtYu8F3pump",
+      "wallet": "",
+      "entry_px": 8.614e-05,
+      "last_px": 0.0001118,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 0.260993498955189
+    },
+    {
+      "t": "2026-10-16T20:52:22Z",
+      "sym": "TTM",
+      "mint": "2UrJcvursk12wiWc59TR1L8h95snmMgyimySrZ1ppump",
+      "wallet": "Numer0",
+      "entry_px": 4.445e-05,
+      "last_px": 4.445e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-16T20:55:16Z",
+      "sym": "TTM",
+      "mint": "2UrJcvursk12wiWc59TR1L8h95snmMgyimySrZ1ppump",
+      "wallet": "",
+      "entry_px": 4.445e-05,
+      "last_px": 4.587e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.004149831271091014
+    },
+    {
+      "t": "2026-10-16T21:20:37Z",
+      "sym": "KALMER",
+      "mint": "tYGWk5byuQT291UXFanfyAGa5XNQp1TXSepfRVDpump",
+      "wallet": "Numer0",
+      "entry_px": 0.0001866,
+      "last_px": 0.0001866,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-16T21:35:09Z",
+      "sym": "KALMER",
+      "mint": "tYGWk5byuQT291UXFanfyAGa5XNQp1TXSepfRVDpump",
+      "wallet": "Numer0",
+      "entry_px": 2.149e-06,
+      "last_px": 2.149e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-16T21:35:40Z",
+      "sym": "KALMER",
+      "mint": "tYGWk5byuQT291UXFanfyAGa5XNQp1TXSepfRVDpump",
+      "wallet": "Numer0",
+      "entry_px": 2.128e-06,
+      "last_px": 2.128e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-17T19:03:17Z",
+      "sym": "AUDIA",
+      "mint": "8id4YvjzFhtNHNmXUt3cuWco8N3Qt5wUqEVscapkpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 3.09e-05,
+      "last_px": 3.09e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T07:01:49Z",
+      "sym": "AUDIA",
+      "mint": "8id4YvjzFhtNHNmXUt3cuWco8N3Qt5wUqEVscapkpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.979e-06,
+      "last_px": 1.979e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T07:02:11Z",
+      "sym": "Shhh",
+      "mint": "6H2cGBBiDp4XNDipjA29EvrFrnUWZkD4M1rpQkuspump",
+      "wallet": "Mr. Frog",
+      "entry_px": 9.35e-06,
+      "last_px": 9.35e-06,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T07:02:12Z",
+      "sym": "DOPE",
+      "mint": "FnzRHyz1gvNx2mtMWY8hHD2uBSsU7suvDgVQH5zxpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.324e-05,
+      "last_px": 1.324e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T07:02:37Z",
+      "sym": "AUDIA",
+      "mint": "8id4YvjzFhtNHNmXUt3cuWco8N3Qt5wUqEVscapkpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.979e-06,
+      "last_px": 1.979e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-18T07:03:44Z",
+      "sym": "DOPE",
+      "mint": "FnzRHyz1gvNx2mtMWY8hHD2uBSsU7suvDgVQH5zxpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.374e-06,
+      "last_px": 2.374e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T07:04:16Z",
+      "sym": "DOPE",
+      "mint": "FnzRHyz1gvNx2mtMWY8hHD2uBSsU7suvDgVQH5zxpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.307e-06,
+      "last_px": 2.307e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-18T07:05:21Z",
+      "sym": "Shhh",
+      "mint": "6H2cGBBiDp4XNDipjA29EvrFrnUWZkD4M1rpQkuspump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.648e-06,
+      "last_px": 2.648e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T07:05:54Z",
+      "sym": "Shhh",
+      "mint": "6H2cGBBiDp4XNDipjA29EvrFrnUWZkD4M1rpQkuspump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.645e-06,
+      "last_px": 2.645e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-18T15:11:09Z",
+      "sym": "PUMP",
+      "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "wallet": "EustazZ",
+      "entry_px": 0.004219,
+      "last_px": 0.004219,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T16:24:31Z",
+      "sym": "WOJAKE",
+      "mint": "2N6KRRGpFtEE6FvoD7ZEE4YpdZRLEHEsrQxiKGgSpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 4.39e-05,
+      "last_px": 4.39e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T16:30:08Z",
+      "sym": "WOJAKE",
+      "mint": "2N6KRRGpFtEE6FvoD7ZEE4YpdZRLEHEsrQxiKGgSpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.45e-06,
+      "last_px": 2.45e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T16:30:41Z",
+      "sym": "WOJAKE",
+      "mint": "2N6KRRGpFtEE6FvoD7ZEE4YpdZRLEHEsrQxiKGgSpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.075e-06,
+      "last_px": 2.075e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-18T16:42:48Z",
+      "sym": "AA",
+      "mint": "UpksX59Qvn8rus8vPzT8PNuKarRwtiqUfYCQCqopump",
+      "wallet": "Mr. Frog",
+      "entry_px": 5.558e-05,
+      "last_px": 5.558e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T16:47:10Z",
+      "sym": "AA",
+      "mint": "UpksX59Qvn8rus8vPzT8PNuKarRwtiqUfYCQCqopump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.123e-06,
+      "last_px": 2.123e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T16:47:42Z",
+      "sym": "AA",
+      "mint": "UpksX59Qvn8rus8vPzT8PNuKarRwtiqUfYCQCqopump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.138e-06,
+      "last_px": 2.138e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-18T22:29:58Z",
+      "sym": "GATOCLAUDI",
+      "mint": "CswMdNvSBLtEqD1gUa11CmsjFdiWd9t4y3Dm7kbBpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 6.598e-05,
+      "last_px": 6.598e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T22:35:17Z",
+      "sym": "GATOCLAUDI",
+      "mint": "CswMdNvSBLtEqD1gUa11CmsjFdiWd9t4y3Dm7kbBpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.427e-05,
+      "last_px": 2.427e-05,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T22:35:51Z",
+      "sym": "GATOCLAUDI",
+      "mint": "CswMdNvSBLtEqD1gUa11CmsjFdiWd9t4y3Dm7kbBpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.475e-06,
+      "last_px": 2.475e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-18T22:48:35Z",
+      "sym": "AGHOST",
+      "mint": "BMY8VZKuJF9Njtq9puUUKjpZUXFxgZpWxTENFuCgpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 5.499e-05,
+      "last_px": 5.499e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T22:57:44Z",
+      "sym": "AGHOST",
+      "mint": "BMY8VZKuJF9Njtq9puUUKjpZUXFxgZpWxTENFuCgpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.227e-06,
+      "last_px": 2.227e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T22:58:18Z",
+      "sym": "AGHOST",
+      "mint": "BMY8VZKuJF9Njtq9puUUKjpZUXFxgZpWxTENFuCgpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.134e-06,
+      "last_px": 2.134e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-18T23:06:31Z",
+      "sym": "FLAMBO",
+      "mint": "BNTCA4F1cpvfeHiGXNQ9Ryax94qKGc6fM329tgwopump",
+      "wallet": "Mr. Frog",
+      "entry_px": 6.666e-05,
+      "last_px": 6.666e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T23:13:05Z",
+      "sym": "FLAMBO",
+      "mint": "BNTCA4F1cpvfeHiGXNQ9Ryax94qKGc6fM329tgwopump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.609e-06,
+      "last_px": 2.609e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-18T23:13:39Z",
+      "sym": "FLAMBO",
+      "mint": "BNTCA4F1cpvfeHiGXNQ9Ryax94qKGc6fM329tgwopump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.324e-06,
+      "last_px": 2.324e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-18T23:38:19Z",
+      "sym": "PUMP",
+      "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "wallet": "EustazZ",
+      "entry_px": 0.001272,
+      "last_px": 0.001272,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T00:16:03Z",
+      "sym": "TRALALA",
+      "mint": "A5SvyMeAUkHZ1gh3bBvHkhNDm1SKhRve9FaPBkd7pump",
+      "wallet": "Mr. Frog",
+      "entry_px": 5.989e-05,
+      "last_px": 5.989e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T00:22:07Z",
+      "sym": "TRALALA",
+      "mint": "A5SvyMeAUkHZ1gh3bBvHkhNDm1SKhRve9FaPBkd7pump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.582e-06,
+      "last_px": 2.582e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T00:22:42Z",
+      "sym": "TRALALA",
+      "mint": "A5SvyMeAUkHZ1gh3bBvHkhNDm1SKhRve9FaPBkd7pump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.422e-06,
+      "last_px": 2.422e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-19T05:18:56Z",
+      "sym": "GODCHUD",
+      "mint": "dzUVjPjFodTVWEc4S3e1RFNxEiVrcMw1vRJGNgppump",
+      "wallet": "Mr. Frog",
+      "entry_px": 4.361e-05,
+      "last_px": 4.361e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T05:20:21Z",
+      "sym": "GODCHUD",
+      "mint": "dzUVjPjFodTVWEc4S3e1RFNxEiVrcMw1vRJGNgppump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.032e-05,
+      "last_px": 1.032e-05,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T05:20:56Z",
+      "sym": "GODCHUD",
+      "mint": "dzUVjPjFodTVWEc4S3e1RFNxEiVrcMw1vRJGNgppump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.068e-05,
+      "last_px": 1.068e-05,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-19T05:28:14Z",
+      "sym": "GODCHUD",
+      "mint": "dzUVjPjFodTVWEc4S3e1RFNxEiVrcMw1vRJGNgppump",
+      "wallet": "",
+      "entry_px": 1.500184e-05,
+      "last_px": 7.91e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 3.161901368098846
+    },
+    {
+      "t": "2026-10-19T19:09:26Z",
+      "sym": "BURNT",
+      "mint": "5Z1KGmXHoU5FTwVn5LryjH882LZN1B1Nxm37PQJ9pump",
+      "wallet": "Mr. Frog",
+      "entry_px": 7.353e-05,
+      "last_px": 7.353e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T19:09:26Z",
+      "sym": "UFI",
+      "mint": "75zGdpJnCvP53AtKRTYBeRZi6XDM9VwkgktgeWrBpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 7.869e-05,
+      "last_px": 7.869e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T19:09:50Z",
+      "sym": "BURNT",
+      "mint": "5Z1KGmXHoU5FTwVn5LryjH882LZN1B1Nxm37PQJ9pump",
+      "wallet": "Mr. Frog",
+      "entry_px": 3.332e-05,
+      "last_px": 3.332e-05,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T19:10:26Z",
+      "sym": "BURNT",
+      "mint": "5Z1KGmXHoU5FTwVn5LryjH882LZN1B1Nxm37PQJ9pump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.995e-05,
+      "last_px": 2.995e-05,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-19T20:05:49Z",
+      "sym": "RIPGUY",
+      "mint": "BmByjv2upZDubBRZp6vbvozavkYt9ti6AhwX86iJpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.569e-05,
+      "last_px": 1.569e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T20:05:51Z",
+      "sym": "usefomo",
+      "mint": "7KifcdFeS9K1Mf2havacMHGzAgtHymDf68Buoh34pump",
+      "wallet": "Mr. Frog",
+      "entry_px": 0.0001568,
+      "last_px": 0.0001568,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T20:05:56Z",
+      "sym": "UFI",
+      "mint": "75zGdpJnCvP53AtKRTYBeRZi6XDM9VwkgktgeWrBpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.972e-06,
+      "last_px": 1.972e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T20:06:33Z",
+      "sym": "UFI",
+      "mint": "75zGdpJnCvP53AtKRTYBeRZi6XDM9VwkgktgeWrBpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.972e-06,
+      "last_px": 1.972e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-19T20:09:01Z",
+      "sym": "RIPGUY",
+      "mint": "BmByjv2upZDubBRZp6vbvozavkYt9ti6AhwX86iJpump",
+      "wallet": "",
+      "entry_px": 1.569e-05,
+      "last_px": 6.629e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 0.9432927342256213
+    },
+    {
+      "t": "2026-10-19T20:09:02Z",
+      "sym": "usefomo",
+      "mint": "7KifcdFeS9K1Mf2havacMHGzAgtHymDf68Buoh34pump",
+      "wallet": "Mr. Frog",
+      "entry_px": 0.0001079,
+      "last_px": 0.0001079,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T20:09:38Z",
+      "sym": "RIPGUY",
+      "mint": "BmByjv2upZDubBRZp6vbvozavkYt9ti6AhwX86iJpump",
+      "wallet": "",
+      "entry_px": 1.569e-05,
+      "last_px": 7.273e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 1.093535595920969
+    },
+    {
+      "t": "2026-10-19T20:10:54Z",
+      "sym": "usefomo",
+      "mint": "7KifcdFeS9K1Mf2havacMHGzAgtHymDf68Buoh34pump",
+      "wallet": "Mr. Frog",
+      "entry_px": 8.154e-05,
+      "last_px": 8.154e-05,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-19T20:11:31Z",
+      "sym": "RIPGUY",
+      "mint": "BmByjv2upZDubBRZp6vbvozavkYt9ti6AhwX86iJpump",
+      "wallet": "",
+      "entry_px": 1.569e-05,
+      "last_px": 8.167e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 0.3841818514977692
+    },
+    {
+      "t": "2026-10-19T20:15:14Z",
+      "sym": "RIPGUY",
+      "mint": "BmByjv2upZDubBRZp6vbvozavkYt9ti6AhwX86iJpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 9.611e-06,
+      "last_px": 9.611e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-19T20:15:51Z",
+      "sym": "RIPGUY",
+      "mint": "BmByjv2upZDubBRZp6vbvozavkYt9ti6AhwX86iJpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.354e-06,
+      "last_px": 2.354e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-20T02:23:28Z",
+      "sym": "SMECK",
+      "mint": "ChVJkHUbeaY4nH3DU51pxDw3vsRuKkCveLXvKKFcpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 0.0001216,
+      "last_px": 0.0001216,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-20T02:46:28Z",
+      "sym": "Nocity",
+      "mint": "6kd7z3v43kaCrq5zR9QfyL3o4837oxfPKJUapNYNpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 8.298e-05,
+      "last_px": 8.298e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-23T23:00:05Z",
+      "sym": "BKIM",
+      "mint": "B99n6CaknE1G882au1E6RPpkMohhMv8QVkdT6dZNpump",
+      "wallet": "Numer0",
+      "entry_px": 5.788e-05,
+      "last_px": 5.788e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-23T23:00:39Z",
+      "sym": "Nocity",
+      "mint": "6kd7z3v43kaCrq5zR9QfyL3o4837oxfPKJUapNYNpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.04e-06,
+      "last_px": 2.04e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-23T23:01:19Z",
+      "sym": "Nocity",
+      "mint": "6kd7z3v43kaCrq5zR9QfyL3o4837oxfPKJUapNYNpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 2.04e-06,
+      "last_px": 2.04e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-23T23:02:38Z",
+      "sym": "BKIM",
+      "mint": "B99n6CaknE1G882au1E6RPpkMohhMv8QVkdT6dZNpump",
+      "wallet": "Numer0",
+      "entry_px": 2.103e-05,
+      "last_px": 2.103e-05,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-23T23:03:57Z",
+      "sym": "BKIM",
+      "mint": "B99n6CaknE1G882au1E6RPpkMohhMv8QVkdT6dZNpump",
+      "wallet": "Numer0",
+      "entry_px": 2.048e-05,
+      "last_px": 2.048e-05,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-24T07:07:57Z",
+      "sym": "SMECK",
+      "mint": "ChVJkHUbeaY4nH3DU51pxDw3vsRuKkCveLXvKKFcpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.933e-06,
+      "last_px": 1.933e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-24T07:08:36Z",
+      "sym": "SMECK",
+      "mint": "ChVJkHUbeaY4nH3DU51pxDw3vsRuKkCveLXvKKFcpump",
+      "wallet": "Mr. Frog",
+      "entry_px": 1.933e-06,
+      "last_px": 1.933e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-25T05:10:03Z",
+      "sym": "MONKO",
+      "mint": "Hes7r4gwoqZby5crUL1DBxFiih9f83bRfMTwpQ51pump",
+      "wallet": "Numer0",
+      "entry_px": 5.039e-05,
+      "last_px": 5.039e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-25T05:10:03Z",
+      "sym": "Kawaiijak",
+      "mint": "752sZPoYrc3tzNjSDFMvY1KiPTfEu6hN4iMShHPXpump",
+      "wallet": "Numer0",
+      "entry_px": 4.354e-05,
+      "last_px": 4.354e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-25T05:15:47Z",
+      "sym": "MONKO",
+      "mint": "Hes7r4gwoqZby5crUL1DBxFiih9f83bRfMTwpQ51pump",
+      "wallet": "Numer0",
+      "entry_px": 2.376e-05,
+      "last_px": 2.376e-05,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-25T05:16:27Z",
+      "sym": "MONKO",
+      "mint": "Hes7r4gwoqZby5crUL1DBxFiih9f83bRfMTwpQ51pump",
+      "wallet": "Numer0",
+      "entry_px": 2.068e-06,
+      "last_px": 2.068e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-25T05:18:26Z",
+      "sym": "Kawaiijak",
+      "mint": "752sZPoYrc3tzNjSDFMvY1KiPTfEu6hN4iMShHPXpump",
+      "wallet": "Numer0",
+      "entry_px": 2.09e-06,
+      "last_px": 2.09e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.018
+    },
+    {
+      "t": "2026-10-25T05:19:06Z",
+      "sym": "Kawaiijak",
+      "mint": "752sZPoYrc3tzNjSDFMvY1KiPTfEu6hN4iMShHPXpump",
+      "wallet": "Numer0",
+      "entry_px": 2.16e-06,
+      "last_px": 2.16e-06,
+      "x": 30,
+      "strategy": "reentry",
+      "pnl": -0.0165
+    },
+    {
+      "t": "2026-10-26T08:12:12Z",
+      "sym": "MONKO",
+      "mint": "Hes7r4gwoqZby5crUL1DBxFiih9f83bRfMTwpQ51pump",
+      "wallet": "",
+      "entry_px": 8.231475774340489e-06,
+      "last_px": 3.464e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 2.3659591333419234
+    },
+    {
+      "t": "2026-10-26T08:12:52Z",
+      "sym": "MONKO",
+      "mint": "Hes7r4gwoqZby5crUL1DBxFiih9f83bRfMTwpQ51pump",
+      "wallet": "",
+      "entry_px": 8.231475774340489e-06,
+      "last_px": 3.464e-05,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 2.762785655565578
+    },
+    {
+      "t": "2026-10-28T20:04:59Z",
+      "sym": "PUMP",
+      "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "wallet": "",
+      "entry_px": 0.001954677836459661,
+      "last_px": 22.43,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 6863.741181467485
+    },
+    {
+      "t": "2026-10-28T20:05:39Z",
+      "sym": "PUMP",
+      "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "wallet": "",
+      "entry_px": 0.001954677836459661,
+      "last_px": 22.43,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 8007.700545045402
+    },
+    {
+      "t": "2026-10-28T20:06:20Z",
+      "sym": "PUMP",
+      "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "wallet": "",
+      "entry_px": 0.001954677836459661,
+      "last_px": 22.43,
+      "x": 30.0,
+      "strategy": "copy",
+      "pnl": 4003.8427725227007
+    }
+  ],
+  "variants": {
+    "copy_tYGWk5byuQT291UXFanfyAGa5XNQp1TXSepfRVDpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.149e-06,
+          "size": 1.0,
+          "ts": "2026-10-16T21:35:09Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.1275100000000002e-06,
+          "size": 0.9,
+          "ts": "2026-10-16T21:35:09Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.128e-06,
+          "size": 0.5,
+          "ts": "2026-10-16T21:35:40Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.1067200000000002e-06,
+          "size": 0.45,
+          "ts": "2026-10-16T21:35:40Z"
+        }
+      }
+    ],
+    "copy_8id4YvjzFhtNHNmXUt3cuWco8N3Qt5wUqEVscapkpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 1.979e-06,
+          "size": 1.0,
+          "ts": "2026-10-18T07:01:49Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 1.95921e-06,
+          "size": 0.9,
+          "ts": "2026-10-18T07:01:49Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 1.979e-06,
+          "size": 0.5,
+          "ts": "2026-10-18T07:02:37Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 1.95921e-06,
+          "size": 0.45,
+          "ts": "2026-10-18T07:02:37Z"
+        }
+      }
+    ],
+    "copy_6H2cGBBiDp4XNDipjA29EvrFrnUWZkD4M1rpQkuspump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.648e-06,
+          "size": 1.0,
+          "ts": "2026-10-18T07:05:21Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.62152e-06,
+          "size": 0.9,
+          "ts": "2026-10-18T07:05:21Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.645e-06,
+          "size": 0.5,
+          "ts": "2026-10-18T07:05:54Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.61855e-06,
+          "size": 0.45,
+          "ts": "2026-10-18T07:05:54Z"
+        }
+      }
+    ],
+    "copy_FnzRHyz1gvNx2mtMWY8hHD2uBSsU7suvDgVQH5zxpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.374e-06,
+          "size": 1.0,
+          "ts": "2026-10-18T07:03:44Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.35026e-06,
+          "size": 0.9,
+          "ts": "2026-10-18T07:03:44Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.307e-06,
+          "size": 0.5,
+          "ts": "2026-10-18T07:04:16Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.2839300000000003e-06,
+          "size": 0.45,
+          "ts": "2026-10-18T07:04:16Z"
+        }
+      }
+    ],
+    "copy_pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 0.001272,
+          "size": 1.0,
+          "ts": "2026-10-18T23:38:19Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 0.00125928,
+          "size": 0.9,
+          "ts": "2026-10-18T23:38:19Z"
+        }
+      }
+    ],
+    "copy_2N6KRRGpFtEE6FvoD7ZEE4YpdZRLEHEsrQxiKGgSpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.45e-06,
+          "size": 1.0,
+          "ts": "2026-10-18T16:30:08Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.4255e-06,
+          "size": 0.9,
+          "ts": "2026-10-18T16:30:08Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.075e-06,
+          "size": 0.5,
+          "ts": "2026-10-18T16:30:41Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.05425e-06,
+          "size": 0.45,
+          "ts": "2026-10-18T16:30:41Z"
+        }
+      }
+    ],
+    "copy_UpksX59Qvn8rus8vPzT8PNuKarRwtiqUfYCQCqopump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.123e-06,
+          "size": 1.0,
+          "ts": "2026-10-18T16:47:10Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.10177e-06,
+          "size": 0.9,
+          "ts": "2026-10-18T16:47:10Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.138e-06,
+          "size": 0.5,
+          "ts": "2026-10-18T16:47:42Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.11662e-06,
+          "size": 0.45,
+          "ts": "2026-10-18T16:47:42Z"
+        }
+      }
+    ],
+    "copy_CswMdNvSBLtEqD1gUa11CmsjFdiWd9t4y3Dm7kbBpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.427e-05,
+          "size": 1.0,
+          "ts": "2026-10-18T22:35:17Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.40273e-05,
+          "size": 0.9,
+          "ts": "2026-10-18T22:35:17Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.475e-06,
+          "size": 0.5,
+          "ts": "2026-10-18T22:35:51Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.45025e-06,
+          "size": 0.45,
+          "ts": "2026-10-18T22:35:51Z"
+        }
+      }
+    ],
+    "copy_BMY8VZKuJF9Njtq9puUUKjpZUXFxgZpWxTENFuCgpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.227e-06,
+          "size": 1.0,
+          "ts": "2026-10-18T22:57:44Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.20473e-06,
+          "size": 0.9,
+          "ts": "2026-10-18T22:57:44Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.134e-06,
+          "size": 0.5,
+          "ts": "2026-10-18T22:58:18Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.11266e-06,
+          "size": 0.45,
+          "ts": "2026-10-18T22:58:18Z"
+        }
+      }
+    ],
+    "copy_BNTCA4F1cpvfeHiGXNQ9Ryax94qKGc6fM329tgwopump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.609e-06,
+          "size": 1.0,
+          "ts": "2026-10-18T23:13:05Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.5829099999999997e-06,
+          "size": 0.9,
+          "ts": "2026-10-18T23:13:05Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.324e-06,
+          "size": 0.5,
+          "ts": "2026-10-18T23:13:39Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.3007600000000002e-06,
+          "size": 0.45,
+          "ts": "2026-10-18T23:13:39Z"
+        }
+      }
+    ],
+    "copy_A5SvyMeAUkHZ1gh3bBvHkhNDm1SKhRve9FaPBkd7pump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.582e-06,
+          "size": 1.0,
+          "ts": "2026-10-19T00:22:07Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.55618e-06,
+          "size": 0.9,
+          "ts": "2026-10-19T00:22:07Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.422e-06,
+          "size": 0.5,
+          "ts": "2026-10-19T00:22:42Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.39778e-06,
+          "size": 0.45,
+          "ts": "2026-10-19T00:22:42Z"
+        }
+      }
+    ],
+    "copy_dzUVjPjFodTVWEc4S3e1RFNxEiVrcMw1vRJGNgppump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 1.032e-05,
+          "size": 1.0,
+          "ts": "2026-10-19T05:20:21Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 1.02168e-05,
+          "size": 0.9,
+          "ts": "2026-10-19T05:20:21Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 1.068e-05,
+          "size": 0.5,
+          "ts": "2026-10-19T05:20:56Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 1.0573199999999999e-05,
+          "size": 0.45,
+          "ts": "2026-10-19T05:20:56Z"
+        }
+      }
+    ],
+    "copy_5Z1KGmXHoU5FTwVn5LryjH882LZN1B1Nxm37PQJ9pump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 3.332e-05,
+          "size": 1.0,
+          "ts": "2026-10-19T19:09:50Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 3.29868e-05,
+          "size": 0.9,
+          "ts": "2026-10-19T19:09:50Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.995e-05,
+          "size": 0.5,
+          "ts": "2026-10-19T19:10:26Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.96505e-05,
+          "size": 0.45,
+          "ts": "2026-10-19T19:10:26Z"
+        }
+      }
+    ],
+    "copy_75zGdpJnCvP53AtKRTYBeRZi6XDM9VwkgktgeWrBpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 1.972e-06,
+          "size": 1.0,
+          "ts": "2026-10-19T20:05:56Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 1.95228e-06,
+          "size": 0.9,
+          "ts": "2026-10-19T20:05:56Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 1.972e-06,
+          "size": 0.5,
+          "ts": "2026-10-19T20:06:33Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 1.95228e-06,
+          "size": 0.45,
+          "ts": "2026-10-19T20:06:33Z"
+        }
+      }
+    ],
+    "copy_BmByjv2upZDubBRZp6vbvozavkYt9ti6AhwX86iJpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 9.611e-06,
+          "size": 1.0,
+          "ts": "2026-10-19T20:15:14Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 9.51489e-06,
+          "size": 0.9,
+          "ts": "2026-10-19T20:15:14Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.354e-06,
+          "size": 0.5,
+          "ts": "2026-10-19T20:15:51Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.3304599999999997e-06,
+          "size": 0.45,
+          "ts": "2026-10-19T20:15:51Z"
+        }
+      }
+    ],
+    "copy_7KifcdFeS9K1Mf2havacMHGzAgtHymDf68Buoh34pump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 0.0001079,
+          "size": 1.0,
+          "ts": "2026-10-19T20:09:02Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 0.000106821,
+          "size": 0.9,
+          "ts": "2026-10-19T20:09:02Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 8.154e-05,
+          "size": 0.5,
+          "ts": "2026-10-19T20:10:54Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 8.07246e-05,
+          "size": 0.45,
+          "ts": "2026-10-19T20:10:54Z"
+        }
+      }
+    ],
+    "copy_ChVJkHUbeaY4nH3DU51pxDw3vsRuKkCveLXvKKFcpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 1.933e-06,
+          "size": 1.0,
+          "ts": "2026-10-24T07:07:57Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 1.91367e-06,
+          "size": 0.9,
+          "ts": "2026-10-24T07:07:57Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 1.933e-06,
+          "size": 0.5,
+          "ts": "2026-10-24T07:08:36Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 1.91367e-06,
+          "size": 0.45,
+          "ts": "2026-10-24T07:08:36Z"
+        }
+      }
+    ],
+    "copy_6kd7z3v43kaCrq5zR9QfyL3o4837oxfPKJUapNYNpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.04e-06,
+          "size": 1.0,
+          "ts": "2026-10-23T23:00:39Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.0196e-06,
+          "size": 0.9,
+          "ts": "2026-10-23T23:00:39Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.04e-06,
+          "size": 0.5,
+          "ts": "2026-10-23T23:01:19Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.0196e-06,
+          "size": 0.45,
+          "ts": "2026-10-23T23:01:19Z"
+        }
+      }
+    ],
+    "copy_B99n6CaknE1G882au1E6RPpkMohhMv8QVkdT6dZNpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.103e-05,
+          "size": 1.0,
+          "ts": "2026-10-23T23:02:38Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.08197e-05,
+          "size": 0.9,
+          "ts": "2026-10-23T23:02:38Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.048e-05,
+          "size": 0.5,
+          "ts": "2026-10-23T23:03:57Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.02752e-05,
+          "size": 0.45,
+          "ts": "2026-10-23T23:03:57Z"
+        }
+      }
+    ],
+    "copy_Hes7r4gwoqZby5crUL1DBxFiih9f83bRfMTwpQ51pump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.376e-05,
+          "size": 1.0,
+          "ts": "2026-10-25T05:15:47Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.35224e-05,
+          "size": 0.9,
+          "ts": "2026-10-25T05:15:47Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.068e-06,
+          "size": 0.5,
+          "ts": "2026-10-25T05:16:27Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.04732e-06,
+          "size": 0.45,
+          "ts": "2026-10-25T05:16:27Z"
+        }
+      }
+    ],
+    "copy_752sZPoYrc3tzNjSDFMvY1KiPTfEu6hN4iMShHPXpump": [
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.09e-06,
+          "size": 1.0,
+          "ts": "2026-10-25T05:18:26Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.0691e-06,
+          "size": 0.9,
+          "ts": "2026-10-25T05:18:26Z"
+        }
+      },
+      {
+        "A": {
+          "variant": "A_dip",
+          "entry_px": 2.16e-06,
+          "size": 0.5,
+          "ts": "2026-10-25T05:19:06Z"
+        },
+        "B": {
+          "variant": "B_confirm",
+          "entry_px": 2.1384e-06,
+          "size": 0.45,
+          "ts": "2026-10-25T05:19:06Z"
+        }
+      }
+    ]
+  },
+  "signals": [
+    {
+      "ts": "2026-11-03T20:07:00Z",
+      "mint": "JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump",
+      "sym": "Pog",
+      "px": 2.419e-05,
+      "liq_usd": 12327.85,
+      "market_cap": 24193,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "78fdpSKQ7LXaLYpN953eKGyrUHJQ1xSaLxf7Eg8t8g9q",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1793735867000,
+      "tx": null,
+      "sig": null,
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 40.0,
+      "holders": 50.0,
+      "total": 46.016000000000005,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 0.0,
+      "tg_channels": [],
+      "seen_count": 1
+    },
+    {
+      "ts": "2026-11-04T08:09:47Z",
+      "mint": "4BCbx4hB1XPmC5mLHsFyHEghC5fb9Afu7THLGXiHpump",
+      "sym": "CHILLCATS",
+      "px": 0.0001658,
+      "liq_usd": 33575.02,
+      "market_cap": 158946,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "HGtEcXHf7ULWf2gvxkH6E6omQXA6Yvy1tqQwv6J3AYFw",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1793766633000,
+      "tx": null,
+      "sig": null,
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 70.0,
+      "holders": 50.0,
+      "total": 49.976000000000006,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 0.0,
+      "tg_channels": [],
+      "seen_count": 2
+    },
+    {
+      "ts": "2026-11-04T14:08:39Z",
+      "mint": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+      "sym": "FLOAT",
+      "px": 0.002226,
+      "liq_usd": 306926.9,
+      "market_cap": 2224310,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "FJk9sajdc2Q4heRPPu3yLzkmf2ZByZkpiHQLv9e2bn5A",
+      "dex_id": "raydium",
+      "pair_created_ms": 1793225743000,
+      "tx": null,
+      "sig": null,
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 100.0,
+      "holders": 50.0,
+      "total": 62.21600000000001,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 99.0,
+      "tg_channels": [
+        "Pumpfunpremium",
+        "SolanaSinais",
+        "lowtaxsolana",
+        "mad_apes_gambles",
+        "pumpfunearlytrending",
+        "shitcoingemsalert",
+        "solgemsradar"
+      ],
+      "seen_count": 2
+    },
+    {
+      "ts": "2026-11-04T19:32:24Z",
+      "mint": "29jQSLyMDP3y1DRkVDVi4FxyeR66p5JCMqsaifMEpump",
+      "sym": "BunThing",
+      "px": 3.877e-05,
+      "liq_usd": 14717.44,
+      "market_cap": 37197,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "EcMqnQ99WTYwX5BLYDHoKbt9gqNMc3fcJtuFBjvEELfh",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1793793371000,
+      "tx": null,
+      "sig": null,
+      "rug": 50.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 40.0,
+      "holders": 50.0,
+      "total": 33.08,
+      "rug_na": true,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 0.0,
+      "tg_channels": [],
+      "seen_count": 2
+    },
+    {
+      "ts": "2026-11-04T20:21:11Z",
+      "mint": "42qKoGmEPTRJsa5jWrYwpydL8RkBwMvg2ykYVoerpump",
+      "sym": "GHOST",
+      "px": 0.0002453,
+      "liq_usd": 41312.78,
+      "market_cap": 238841,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "9SPrPCpeXEoSeC37REmxg5S1Asa1oVCQS8KgANwjCuXt",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1793815529000,
+      "tx": null,
+      "sig": null,
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 70.0,
+      "holders": 50.0,
+      "total": 49.976000000000006,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 0.0,
+      "tg_channels": [],
+      "seen_count": 20
+    },
+    {
+      "ts": "2026-11-04T20:32:26Z",
+      "mint": "t2TGpqDS81fNNXCST8hxNrRsfVPxJdw41Cct4yLpump",
+      "sym": "Suica",
+      "px": 5.732e-05,
+      "liq_usd": 18274.9,
+      "market_cap": 55277,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "ByvBfG1taQm1D1NzW4dF5XTrymPggYtdg5uiYCPm8eeR",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1793758597000,
+      "tx": null,
+      "sig": null,
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 40.0,
+      "holders": 50.0,
+      "total": 46.016000000000005,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 0.0,
+      "tg_channels": [],
+      "seen_count": 5
+    },
+    {
+      "ts": "2026-11-05T07:58:02Z",
+      "mint": "81Y1jv7kDNQotwTXT4CkpZ2gNE2TedVTLFYnEW1ppump",
+      "sym": "Poke",
+      "px": 4.496e-05,
+      "liq_usd": 17023.09,
+      "market_cap": 43341,
+      "wallet_names": [
+        "Numer0"
+      ],
+      "source": "wallet:Numer0",
+      "rug_ok": true,
+      "pair_addr": "4K7oh6pBNU386GzcwWFKVby3j9HAra7ZMNX2Eimnz9zo",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1793127945000,
+      "tx": "3yHFK568NNyguMxHccRy4E97R6hspbj63khMu9Rnv6XPxQcRvtAgeU7ZByJx2STBmAoKKYehfmfM9TMxMfNnupbc",
+      "sig": "3yHFK568NNyguMxHccRy4E97R6hspbj63khMu9Rnv6XPxQcRvtAgeU7ZByJx2STBmAoKKYehfmfM9TMxMfNnupbc",
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 35.0,
+      "liq": 40.0,
+      "holders": 50.0,
+      "total": 51.72,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 26.2,
+      "tg_channels": [
+        "solearlytrending"
+      ],
+      "seen_count": 1
+    },
+    {
+      "ts": "2026-11-05T07:58:02Z",
+      "mint": "7sbzuBNq9YVgTyuqYDVSJdX1GbLNvhpPka7hYhoJR2LX",
+      "sym": "RIP",
+      "px": 1.05e-05,
+      "liq_usd": 7074.19,
+      "market_cap": 9972,
+      "wallet_names": [
+        "Numer0"
+      ],
+      "source": "wallet:Numer0",
+      "rug_ok": true,
+      "pair_addr": "GG1zcN1jtea2BZRC1Rse9UJiKavK4DDN9sG29z5kSe75",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1793860294000,
+      "tx": "7gXdTFsnu7QtM37gk51KBHBm47a9zvKLhhkEar98Eddga7SzYMUx8pxrG6zcWbiyjpPYA9eLmo9dYBwbdU97oAz",
+      "sig": "7gXdTFsnu7QtM37gk51KBHBm47a9zvKLhhkEar98Eddga7SzYMUx8pxrG6zcWbiyjpPYA9eLmo9dYBwbdU97oAz",
+      "rug": 85.0,
+      "x": 30.0,
+      "wallets": 35.0,
+      "liq": 40.0,
+      "holders": 20.0,
+      "total": 45.84,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 0.0,
+      "tg_channels": [],
+      "seen_count": 3
+    },
+    {
+      "ts": "2026-11-05T07:58:05Z",
+      "mint": "2gVNeu8dP7XiLoaWfUvUJXUM5AdXY8418aft8xhUpump",
+      "sym": "GTA6",
+      "px": 0.0001461,
+      "liq_usd": 34579.3,
+      "market_cap": 141159,
+      "wallet_names": [
+        "Numer0"
+      ],
+      "source": "wallet:Numer0",
+      "rug_ok": true,
+      "pair_addr": "88FJjLwfn9dz3uGFt8tFxcwJugfGFTLDqEiTpt1uRypu",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1792269690000,
+      "tx": "63hXsS7k7aGGjytf7LvojfEhhCamXHXR48xFm9RyadhbNN1RLBAhPtoSDf2ZbkXqUtZbEsKYQavUryhmEEaQRSNq",
+      "sig": "63hXsS7k7aGGjytf7LvojfEhhCamXHXR48xFm9RyadhbNN1RLBAhPtoSDf2ZbkXqUtZbEsKYQavUryhmEEaQRSNq",
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 35.0,
+      "liq": 70.0,
+      "holders": 50.0,
+      "total": 57.792,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 43.8,
+      "tg_channels": [
+        "SolanaSinais",
+        "solgemsradar"
+      ],
+      "seen_count": 1
+    },
+    {
+      "ts": "2026-11-05T08:07:49Z",
+      "mint": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+      "sym": "DESSA",
+      "px": 0.02249,
+      "liq_usd": 448272.15,
+      "market_cap": 22022767,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "DEXTCER4k9dwbxTMU8zNVVwGevVmvHMB183pF2xxZwvH",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1793019918000,
+      "tx": null,
+      "sig": null,
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 100.0,
+      "holders": 20.0,
+      "total": 59.696000000000005,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 100.0,
+      "tg_channels": [
+        "CMC_CG_NewList",
+        "Pumpfunpremium",
+        "SolanaSinais",
+        "shitcoingemsalert",
+        "solgemsradar"
+      ],
+      "seen_count": 4
+    },
+    {
+      "ts": "2026-11-05T13:02:33Z",
+      "mint": "GeNwBZWJcWQAkLDdty7geii9xSjtCuga1qE9DDzLpump",
+      "sym": "CATO",
+      "px": 3.446e-05,
+      "liq_usd": 13582.67,
+      "market_cap": 33208,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "8GcU12ppfgqcrJdNcJCk1J29Zd5HHsuUEU7PuU3pLhVc",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1790681402000,
+      "tx": null,
+      "sig": null,
+      "rug": 50.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 40.0,
+      "holders": 50.0,
+      "total": 33.08,
+      "rug_na": true,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 0.0,
+      "tg_channels": [],
+      "seen_count": 4
+    },
+    {
+      "ts": "2026-11-05T13:10:12Z",
+      "mint": "57vAaMsnAJXkvULtAz7fsi6gRn3bHRJFJsJV1okNpump",
+      "sym": "OREN",
+      "px": 7.823e-05,
+      "liq_usd": 24576.4,
+      "market_cap": 72601,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "FptqM7Ev2nWFNT2v4QW5e1cHH6TAkgYtQd2NcJeKWebx",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1793274906000,
+      "tx": null,
+      "sig": null,
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 70.0,
+      "holders": 50.0,
+      "total": 58.376000000000005,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 100.0,
+      "tg_channels": [
+        "AlphaStrikeSol",
+        "CMC_CG_NewList",
+        "Pumpfunpremium",
+        "SolanaSinais",
+        "mad_apes_gambles",
+        "pumpfunearlytrending",
+        "shitcoingemsalert",
+        "solearlytrending",
+        "solgemsradar"
+      ],
+      "seen_count": 2
+    },
+    {
+      "ts": "2026-11-05T13:10:13Z",
+      "mint": "Cx3onEtJqfzfqbVG1mnveskpvA7uMWpq31hhZx2jpump",
+      "sym": "Butny",
+      "px": 0.0003302,
+      "liq_usd": 47486.58,
+      "market_cap": 330253,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "ADH9AwGoU1n2yZZNpdrDr7sYyQHr1T24AZPXHFx37jWb",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1783190393000,
+      "tx": null,
+      "sig": null,
+      "rug": 77.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 70.0,
+      "holders": 20.0,
+      "total": 41.528,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 0.0,
+      "tg_channels": [],
+      "seen_count": 2
+    },
+    {
+      "ts": "2026-11-05T14:09:11Z",
+      "mint": "64MWN63e19qaw2HEecX6btUJSSbWwZgrw74bjFVVpump",
+      "sym": "LLD",
+      "px": 4.622e-05,
+      "liq_usd": 17833.43,
+      "market_cap": 44797,
+      "wallet_names": [],
+      "source": "dex_boost",
+      "rug_ok": true,
+      "pair_addr": "H2zmZDvWp1gwH9xF4Lrm1BU4xG96sGKWjfF5NtiUsdHf",
+      "dex_id": "pumpswap",
+      "pair_created_ms": 1771018148000,
+      "tx": null,
+      "sig": null,
+      "rug": 99.0,
+      "x": 30.0,
+      "wallets": 0.0,
+      "liq": 40.0,
+      "holders": 50.0,
+      "total": 46.016000000000005,
+      "rug_na": false,
+      "x_default": true,
+      "holders_default": false,
+      "tg": 0.0,
+      "tg_channels": [],
+      "seen_count": 1
+    }
+  ],
+  "new_pools": [],
+  "strategies": {
+    "copy": {
+      "budget": 99.86840499331959,
+      "alloc": 27.000500000000013,
+      "pnl": 9445.945914134038,
+      "n": 24,
+      "wins": 3,
+      "trades": 0
+    },
+    "snipe": {
+      "budget": 10.0,
+      "alloc": 0.0,
+      "pnl": 0.0,
+      "n": 0,
+      "wins": 0,
+      "trades": 0
+    },
+    "arb": {
+      "budget": 10.0,
+      "alloc": 0.0,
+      "pnl": 0.14631639999999999,
+      "n": 8,
+      "wins": 8,
+      "trades": 0
+    },
+    "reentry": {
+      "budget": 99.81320649614631,
+      "alloc": 29.872675000000022,
+      "pnl": 9440.719496391139,
+      "n": 41,
+      "wins": 0,
+      "trades": 0
+    },
+    "confluence": {
+      "budget": 10.0,
+      "alloc": 0.0,
+      "pnl": 0.0,
+      "n": 0,
+      "wins": 0,
+      "trades": 0
+    }
+  },
+  "confluence": {
+    "watching": [],
+    "log": [
+      {
+        "t": "2026-10-25T16:30:56Z",
+        "mint": "G5omx5DpAhAsvshxPga13qmhNfdduR4Htcq3bhZhpump",
+        "sym": "GOONIFY",
+        "status": "expired",
+        "wallets": [
+          {
+            "wallet": "Trunoest",
+            "ts": 1792942121.3819327,
+            "tx": "2TH2vq6mPitVDZLAZzxc7pmE7Nirw5duw9SLzBSK24QRFVW5u8rHhsjnY9dKp1fgUpZyJ9iHucYgYtPf1nZ5KuVF"
+          },
+          {
+            "wallet": "EustazZ",
+            "ts": 1792942249.6074688,
+            "tx": "457SmNrpF17p6kj9roKfJ1Jijf7dvFwe1YhH2LdKhxzi7k6caCCK9QwkngM4mrLSp8YLRyYiT49fssMdjV7q9Mhi"
+          }
+        ],
+        "last_filters": {
+          "pass": false,
+          "fail": "bonding_curve_not_graduated",
+          "t": "2026-10-25T16:29:56Z",
+          "sym": "GOONIFY",
+          "dex": "pumpfun",
+          "liq": 0.0,
+          "h1": -80.55,
+          "age_min": 63.9,
+          "px": 2.902e-06,
+          "mcap": 2902.82,
+          "pair_addr": "2kHzw9C8uspgfg9MnZh5osiigcGUmjc2DUykKjfCXobJ"
+        }
+      },
+      {
+        "t": "2026-10-25T16:49:46Z",
+        "mint": "44G828Ed2YxFAEjPuhSYS8fFhihTVts1M2AYQARvpump",
+        "sym": "GME",
+        "status": "expired",
+        "wallets": [
+          {
+            "wallet": "Mitch",
+            "ts": 1792942880.4402106,
+            "tx": "4jUK4PRW83MP7yFQrUSsYwNgccXbMMPR2nuX6aiy7cjhxTaDjmkBKRRTw1XksJU6NyT7s8V9dUZYiHN9ZaAHssdh"
+          },
+          {
+            "wallet": "Mr. Frog",
+            "ts": 1792942900.7104895,
+            "tx": "2aogTvfaQvkUaoW4NUy8dxX1vTV66Z41JuKQ9FURBZKCKV8CWQvFwMF8NvKfA4p77bh3rgL9SBfKo1Z62oVnVv9J"
+          }
+        ],
+        "last_filters": {
+          "pass": false,
+          "fail": "bonding_curve_not_graduated",
+          "t": "2026-10-25T16:40:02Z",
+          "sym": "GME",
+          "dex": "pumpfun",
+          "liq": 0.0,
+          "h1": 0.0,
+          "age_min": 244.4,
+          "px": 0.0,
+          "mcap": null,
+          "pair_addr": "FZfcQFsVZNQCtLhNommDSjCm7EZ5R6wpnkNzcQvtrLpN"
+        }
+      },
+      {
+        "t": "2026-10-25T17:43:11Z",
+        "mint": "7jdWkNzuyAykBWZT1cwwwNVqANtuiT6ECVQRJZ2Hpump",
+        "sym": "@a1lon9",
+        "status": "rejected",
+        "wallets": [
+          {
+            "wallet": "Cented",
+            "ts": 1792950030.0,
+            "tx": "4ED6vuf4BowZeaDbq6Qu2w7YP4M5pbsuWstQ4cjPsCMt27K6h1caaS6QKEccXkB2P7i92UxqFzxDUbkgCqnDJaZc"
+          },
+          {
+            "wallet": "EustazZ",
+            "ts": 1792950119.0,
+            "tx": "48t47AXXCG1eT3e24AG4WQHKoTevBAVnsgSw3CZ1e7FbiUSHwpYKvtsLCr1BuHVeuuEy2thUbtjLXT6vAX6QgEst"
+          }
+        ],
+        "last_filters": {
+          "pass": false,
+          "fail": "kol_sold>30%",
+          "t": "2026-10-25T17:43:11Z",
+          "sym": "@a1lon9",
+          "dex": "pumpfun",
+          "liq": 0.0,
+          "h1": 44.31,
+          "age_min": 2.8,
+          "px": 5.25e-06,
+          "mcap": 5250.68,
+          "pair_addr": "6CgRM3rF62xhHGNWNNT9ac8rWd7nLMErENzPGYKanyP",
+          "token_created_ms": 1792950023000,
+          "m5_buys": 203,
+          "m5_sells": 141
+        }
+      },
+      {
+        "t": "2026-10-25T19:45:00Z",
+        "mint": "Cw2sD5g4DrEJbovgPWkELauBmE27SQE3c1nLKYEKpump",
+        "sym": "SMS",
+        "status": "rejected",
+        "wallets": [
+          {
+            "wallet": "Cented",
+            "ts": 1792957323.0,
+            "tx": "2eejoeQ5Vx3hTSmv713UFcrmaE8erwgHi6xT1nMrtR4FrHPQDpVUZRa7BKa9N2MSVrZBUkkKeKpAfFsNgWBn6uvb"
+          },
+          {
+            "wallet": "EustazZ",
+            "ts": 1792957494.0,
+            "tx": "4wnNfb7KdVPReADJ9pMKLQGnhtHfWmC1aFGoWxewjoTpAqNJMydYL1B188asBMfCgUGvNr7TWbcTw6gubDVWhPiV"
+          }
+        ],
+        "last_filters": {
+          "pass": false,
+          "fail": "kol_sold>30%",
+          "t": "2026-10-25T19:45:00Z",
+          "sym": "SMS",
+          "dex": "pumpfun",
+          "liq": 0.0,
+          "h1": 688.0,
+          "age_min": 3.3,
+          "px": 2.281e-05,
+          "mcap": 22811.73,
+          "pair_addr": "2jyRPU1UkTvwkuVPgTZeas9Hz5xN5Sr3wPGKR8wau4gZ",
+          "token_created_ms": 1792957302000,
+          "m5_buys": 919,
+          "m5_sells": 654
+        }
+      },
+      {
+        "t": "2026-10-27T14:18:20Z",
+        "mint": "GZYL4JVHikj6H71a7mTdWay1q7DwsWdJFEhkQCsYz4WT",
+        "sym": "DESSA",
+        "status": "rejected",
+        "wallets": [
+          {
+            "wallet": "Mitch",
+            "ts": 1793109595.0,
+            "tx": "2LuTbbMAMFAugQ2KgSiKURmeop6qLRjAsFPJNzYhrrrE2DaNRpJ8CusLxMwojEtYEdA4oXU8TM5gqWCL9nruZwZF"
+          },
+          {
+            "wallet": "Mr. Frog",
+            "ts": 1793109708.0,
+            "tx": "23VMMJpEukZJuQbP6yasdtmbxP25xy1wQR8B9jqTBKuW8pGkZo7b3zk7jzfENhyBoK3ggcbym4Jjai58q5Kkp4Uq"
+          }
+        ],
+        "last_filters": {
+          "pass": false,
+          "fail": "kol_sold>30%",
+          "t": "2026-10-27T14:18:20Z",
+          "sym": "DESSA",
+          "dex": "pumpswap",
+          "liq": 9064.86,
+          "h1": 14.73,
+          "age_min": 5310.2,
+          "px": 1.393e-05,
+          "mcap": 13390,
+          "pair_addr": "VAzfgUPHpLNnDq5hFzAMeTcHhM3aB7MDqPquJ3Xb8xW",
+          "token_created_ms": 1792792090000,
+          "m5_buys": 0,
+          "m5_sells": 3
+        }
+      },
+      {
+        "t": "2026-10-28T05:13:18Z",
+        "mint": "JBbB23awni9EQ5Sxu1wuknpUwZVNR6pfijhNc5gdpump",
+        "sym": "EA",
+        "status": "rejected",
+        "wallets": [
+          {
+            "wallet": "Numer0",
+            "ts": 1793164239.0,
+            "tx": "53VKRGju4XuM2gAmuejgkYnLRm5TtwNdhXYa17JCUzk4TN9amWHgeXS7AoQjygwQuAnKxy3qWE2gg4RXorzaivrX"
+          },
+          {
+            "wallet": "Cented",
+            "ts": 1793164396.0,
+            "tx": "qKjH36DLywKgozTCDFFdv8gjeV4uMLiFe2oFYt8h2pM4wdvTJXqu2wyLHEaeB6oHLSp4ErJsBd2d2XDegUdZ1Mg"
+          }
+        ],
+        "last_filters": {
+          "pass": false,
+          "fail": "kol_sold>30%",
+          "t": "2026-10-28T05:13:18Z",
+          "sym": "EA",
+          "dex": "pumpfun",
+          "liq": 0.0,
+          "h1": 397.0,
+          "age_min": 2.9,
+          "px": 1.924e-05,
+          "mcap": 19240.16,
+          "pair_addr": "9jEdG3AumWc7xxkedP1kwDwi5YWJb9FG5Sf5YcVMMhu",
+          "token_created_ms": 1793164226000,
+          "m5_buys": 749,
+          "m5_sells": 537
+        }
+      },
+      {
+        "t": "2026-11-01T14:02:55Z",
+        "mint": "DVDni8iUAkYwdeDtWTBDuZK43nKakSB3z5MQ6q5Kpump",
+        "sym": "shegoin",
+        "status": "rejected",
+        "wallets": [
+          {
+            "wallet": "Mr. Frog",
+            "ts": 1793538399.0,
+            "tx": "fkwuPNvCqYexE8yuG9LeqEkTeRLKYYUVZCiwco3HoWCQw8Mwcpn6cz9UJj7BYuW9K7PzUda249Uit9hmPeKq61D"
+          },
+          {
+            "wallet": "Mitch",
+            "ts": 1793538485.0,
+            "tx": "FswRoTQPZekYuTVeeqrRwSwQpEjqmVDWBy1enyoHsXrB8wqAhb9N46jkCQWeT4a9d14hjavvFykEb9xpP3EgmMd"
+          }
+        ],
+        "last_filters": {
+          "pass": false,
+          "fail": "kol_sold>30%",
+          "t": "2026-11-01T14:02:55Z",
+          "sym": "shegoin",
+          "dex": "pumpswap",
+          "liq": 20588.0,
+          "h1": 75.58,
+          "age_min": 50.5,
+          "px": 7.103e-05,
+          "mcap": 68414,
+          "pair_addr": "9P2imdRwkxwtgg5vq9Do7N3UsLyaTHAFiCLHzjYd6M8N",
+          "token_created_ms": 1793490020000,
+          "m5_buys": 156,
+          "m5_sells": 82
+        }
+      },
+      {
+        "t": "2026-11-03T20:03:02Z",
+        "mint": "FqmuGbw5jtX5D8vsNvEG5M83py2s3RcWyxbWczw3pump",
+        "sym": "BingBingBing",
+        "status": "expired",
+        "wallets": [
+          {
+            "wallet": "Mr. Frog",
+            "ts": 1793710232.0,
+            "tx": "2iNvPh29qatCcsZyBCAH6RpeF5om1EkFBhhw9yvHJVJPZzbwdtswMUSV5145RUxJewkJAwmcg9FfH73G9tKDemBA"
+          },
+          {
+            "wallet": "Mitch",
+            "ts": 1793710812.0,
+            "tx": "5RtbjH4B7MbQjS9C4efKRXbCNcZedrD9BVsc99r2Ak1JVZHQHkHLtxYtwW3YCcvnMMVqzF255egpV2t6HSrEfLd"
+          }
+        ],
+        "last_filters": {
+          "pass": false,
+          "fail": "liq<15k",
+          "t": "2026-11-03T14:09:57Z",
+          "sym": "BingBingBing",
+          "dex": "pumpswap",
+          "liq": 13642.09,
+          "h1": -6.49,
+          "age_min": 69.6,
+          "px": 3.537e-05,
+          "mcap": 33879,
+          "pair_addr": "2nqsm38cZVvbg3NKmQFpkZ5GYvnovgmbhwkF9ZLLkqn8",
+          "token_created_ms": 1793571907000,
+          "m5_buys": 12,
+          "m5_sells": 11
+        }
+      }
+    ],
+    "rules": "2+ KOL/10min; no >=3 KOL entro 3' dal lancio; nessun KOL ha venduto >30%; liq>=15k graduated, age>=10m, rug!=danger, insider=0, top10 senza pool<25%, holder<=5%, h1<=+50% (wait 60m), m5 sells<=buys"
+  },
+  "arb": [],
+  "protections": {
+    "daily_pnl": 0.0,
+    "consecutive_losses": 6,
+    "paused_until": 1793895052.7866757,
+    "kill_switch": false
+  },
+  "v1": {
+    "cycles": 2280,
+    "open_positions": 1547,
+    "trades": 1557,
+    "rejected": 30,
+    "pnl_totale": {
+      "1usdc": {
+        "N1": {
+          "B": {
+            "30s": {
+              "pnl_usdc": 1.924277,
+              "trades": 29
+            },
+            "0s": {
+              "pnl_usdc": 9.606199,
+              "trades": 40
+            },
+            "5s": {
+              "pnl_usdc": 8.945496,
+              "trades": 28
+            }
+          }
+        },
+        "S": {
+          "B": {
+            "30s": {
+              "pnl_usdc": 1.779292,
+              "trades": 26
+            },
+            "0s": {
+              "pnl_usdc": 9.606199,
+              "trades": 40
+            },
+            "5s": {
+              "pnl_usdc": 8.667168,
+              "trades": 30
+            }
+          }
+        }
+      }
+    },
+    "S_blocked_still_in": 484,
+    "rules": {
+      "entry": {
+        "N1": "ogni acquisto (riferimento)",
+        "S": "single-wallet: copia ogni acquisto dopo 0/5/30 s solo se ancora dentro; uscita solo B",
+        "N3": "3 wallet, controlli completi al 3° segnale",
+        "C": "pre-armata al 2° segnale, ricontrollo al 3°, scarto se prezzo > +15%"
+      },
+      "exit": {
+        "A": {
+          "risk_free_multiple": 3.33,
+          "risk_free_sell_pct": 30,
+          "take_profits": [
+            {
+              "multiple": 3,
+              "sell_pct_of_remaining": 50
+            },
+            {
+              "multiple": 5,
+              "sell_pct_of_remaining": 50
+            }
+          ],
+          "stop_loss": null
+        },
+        "B": {
+          "copy_wallet_sells": true,
+          "stop_loss_pct": null
+        }
+      },
+      "delays_s": [
+        0,
+        5,
+        30
+      ],
+      "sizes_usdc": [
+        1.0
+      ],
+      "reentries_usdc": [
+        1.0,
+        0.5
+      ],
+      "pnl_axes": "wallet > size > ingresso > uscita > ritardo",
+      "fixed_cost_usdc_per_swap": 0.01
+    }
+  },
+  "open_positions": {
+    "copy_tYGWk5byuQT291UXFanfyAGa5XNQp1TXSepfRVDpump": {
+      "sym": "KALMER",
+      "mint": "tYGWk5byuQT291UXFanfyAGa5XNQp1TXSepfRVDpump",
+      "entry_px": 3.542811884421892e-06,
+      "last_px": 1.949e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.1771800115397368,
+      "pnl_mtm": -1.1771800115397368,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_8id4YvjzFhtNHNmXUt3cuWco8N3Qt5wUqEVscapkpump": {
+      "sym": "AUDIA",
+      "mint": "8id4YvjzFhtNHNmXUt3cuWco8N3Qt5wUqEVscapkpump",
+      "entry_px": 3.163271534689317e-06,
+      "last_px": 1.88e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.0666964739800264,
+      "pnl_mtm": -1.0666964739800264,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_6H2cGBBiDp4XNDipjA29EvrFrnUWZkD4M1rpQkuspump": {
+      "sym": "Shhh",
+      "mint": "6H2cGBBiDp4XNDipjA29EvrFrnUWZkD4M1rpQkuspump",
+      "entry_px": 3.7112290149342246e-06,
+      "last_px": 2.506e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -0.8643799797077367,
+      "pnl_mtm": -0.8643799797077367,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_FnzRHyz1gvNx2mtMWY8hHD2uBSsU7suvDgVQH5zxpump": {
+      "sym": "DOPE",
+      "mint": "FnzRHyz1gvNx2mtMWY8hHD2uBSsU7suvDgVQH5zxpump",
+      "entry_px": 3.5039014887843757e-06,
+      "last_px": 2.118e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.041327378010271,
+      "pnl_mtm": -1.041327378010271,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn": {
+      "sym": "PUMP",
+      "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+      "entry_px": 0.001954677836459661,
+      "last_px": 0.004215,
+      "size_usd": 0.35,
+      "cost": 0.0063,
+      "pnl": 0.39842795183066737,
+      "pnl_mtm": 0.39842795183066737,
+      "strategy": "copy",
+      "reentries": 1
+    },
+    "copy_2N6KRRGpFtEE6FvoD7ZEE4YpdZRLEHEsrQxiKGgSpump": {
+      "sym": "WOJAKE",
+      "mint": "2N6KRRGpFtEE6FvoD7ZEE4YpdZRLEHEsrQxiKGgSpump",
+      "entry_px": 3.7207576502755016e-06,
+      "last_px": 1.872e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.29469166097704,
+      "pnl_mtm": -1.29469166097704,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_UpksX59Qvn8rus8vPzT8PNuKarRwtiqUfYCQCqopump": {
+      "sym": "AA",
+      "mint": "UpksX59Qvn8rus8vPzT8PNuKarRwtiqUfYCQCqopump",
+      "entry_px": 3.4583548611465094e-06,
+      "last_px": 2.025e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.0886536906245396,
+      "pnl_mtm": -1.0886536906245396,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_CswMdNvSBLtEqD1gUa11CmsjFdiWd9t4y3Dm7kbBpump": {
+      "sym": "GATOCLAUDI",
+      "mint": "CswMdNvSBLtEqD1gUa11CmsjFdiWd9t4y3Dm7kbBpump",
+      "entry_px": 9.675692410926351e-06,
+      "last_px": 1.853e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -2.0737228951419833,
+      "pnl_mtm": -2.0737228951419833,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_BMY8VZKuJF9Njtq9puUUKjpZUXFxgZpWxTENFuCgpump": {
+      "sym": "AGHOST",
+      "mint": "BMY8VZKuJF9Njtq9puUUKjpZUXFxgZpWxTENFuCgpump",
+      "entry_px": 3.5636827495393163e-06,
+      "last_px": 1.864e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.2448639595577338,
+      "pnl_mtm": -1.2448639595577338,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_BNTCA4F1cpvfeHiGXNQ9Ryax94qKGc6fM329tgwopump": {
+      "sym": "FLAMBO",
+      "mint": "BNTCA4F1cpvfeHiGXNQ9Ryax94qKGc6fM329tgwopump",
+      "entry_px": 4.075402005732649e-06,
+      "last_px": 1.901e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.3863573732566963,
+      "pnl_mtm": -1.3863573732566963,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_A5SvyMeAUkHZ1gh3bBvHkhNDm1SKhRve9FaPBkd7pump": {
+      "sym": "TRALALA",
+      "mint": "A5SvyMeAUkHZ1gh3bBvHkhNDm1SKhRve9FaPBkd7pump",
+      "entry_px": 4.0954407711024855e-06,
+      "last_px": 1.881e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.4042719427952814,
+      "pnl_mtm": -1.4042719427952814,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_dzUVjPjFodTVWEc4S3e1RFNxEiVrcMw1vRJGNgppump": {
+      "sym": "GODCHUD",
+      "mint": "dzUVjPjFodTVWEc4S3e1RFNxEiVrcMw1vRJGNgppump",
+      "entry_px": 1.500184e-05,
+      "last_px": 2.488e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.5122689350106389,
+      "pnl_mtm": -1.5122689350106389,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_5Z1KGmXHoU5FTwVn5LryjH882LZN1B1Nxm37PQJ9pump": {
+      "sym": "BURNT",
+      "mint": "5Z1KGmXHoU5FTwVn5LryjH882LZN1B1Nxm37PQJ9pump",
+      "entry_px": 4.145497901288388e-05,
+      "last_px": 2.037e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -2.4296558900459875,
+      "pnl_mtm": -2.4296558900459875,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_75zGdpJnCvP53AtKRTYBeRZi6XDM9VwkgktgeWrBpump": {
+      "sym": "UFI",
+      "mint": "75zGdpJnCvP53AtKRTYBeRZi6XDM9VwkgktgeWrBpump",
+      "entry_px": 3.2326589282291864e-06,
+      "last_px": 1.841e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.128749427426853,
+      "pnl_mtm": -1.128749427426853,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_BmByjv2upZDubBRZp6vbvozavkYt9ti6AhwX86iJpump": {
+      "sym": "RIPGUY",
+      "mint": "BmByjv2upZDubBRZp6vbvozavkYt9ti6AhwX86iJpump",
+      "entry_px": 5.112857325818073e-06,
+      "last_px": 2.198e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.0074231886622371,
+      "pnl_mtm": -1.0074231886622371,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_7KifcdFeS9K1Mf2havacMHGzAgtHymDf68Buoh34pump": {
+      "sym": "usefomo",
+      "mint": "7KifcdFeS9K1Mf2havacMHGzAgtHymDf68Buoh34pump",
+      "entry_px": 0.00011479816601525586,
+      "last_px": 1.972e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -2.5095550630630736,
+      "pnl_mtm": -2.5095550630630736,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_ChVJkHUbeaY4nH3DU51pxDw3vsRuKkCveLXvKKFcpump": {
+      "sym": "SMECK",
+      "mint": "ChVJkHUbeaY4nH3DU51pxDw3vsRuKkCveLXvKKFcpump",
+      "entry_px": 3.187882799064736e-06,
+      "last_px": 1.933e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.0366036184210528,
+      "pnl_mtm": -1.0366036184210528,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_6kd7z3v43kaCrq5zR9QfyL3o4837oxfPKJUapNYNpump": {
+      "sym": "Nocity",
+      "mint": "6kd7z3v43kaCrq5zR9QfyL3o4837oxfPKJUapNYNpump",
+      "entry_px": 3.345174294522172e-06,
+      "last_px": 1.795e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.211015340337147,
+      "pnl_mtm": -1.211015340337147,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_B99n6CaknE1G882au1E6RPpkMohhMv8QVkdT6dZNpump": {
+      "sym": "BKIM",
+      "mint": "B99n6CaknE1G882au1E6RPpkMohhMv8QVkdT6dZNpump",
+      "entry_px": 2.8013619761898873e-05,
+      "last_px": 2.012e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -2.372944482264257,
+      "pnl_mtm": -2.372944482264257,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_Hes7r4gwoqZby5crUL1DBxFiih9f83bRfMTwpQ51pump": {
+      "sym": "MONKO",
+      "mint": "Hes7r4gwoqZby5crUL1DBxFiih9f83bRfMTwpQ51pump",
+      "entry_px": 8.231475774340489e-06,
+      "last_px": 1.808e-06,
+      "size_usd": 0.875,
+      "cost": 0.018375000000000002,
+      "pnl": -0.7011858903713866,
+      "pnl_mtm": -0.7011858903713866,
+      "strategy": "copy",
+      "reentries": 2
+    },
+    "copy_752sZPoYrc3tzNjSDFMvY1KiPTfEu6hN4iMShHPXpump": {
+      "sym": "Kawaiijak",
+      "mint": "752sZPoYrc3tzNjSDFMvY1KiPTfEu6hN4iMShHPXpump",
+      "entry_px": 3.411023871287053e-06,
+      "last_px": 1.998e-06,
+      "size_usd": 2.5,
+      "cost": 0.0525,
+      "pnl": -1.0881303009057282,
+      "pnl_mtm": -1.0881303009057282,
+      "strategy": "copy",
+      "reentries": 2
+    }
+  },
+  "pnl_warning": {
+    "copy": true,
+    "reentry": true,
+    "note": "PnL copy/reentry non affidabile: bug prezzo PUMP 28/10. Non mostrare come guadagno reale."
+  }
+}

@@ -81,19 +81,32 @@
   }
 
   function normalizePair(p) {
-    // INNESTO HUNTER: allineare a shape scanner.json (mint,sym,name,mc,vol,h1,dex,score,risks,ok)
+    // Shape allineata a scanner.json (Hunter 2026-11-05)
     if (!p) return null;
     var base = p.baseToken || {};
+    var img = (p.info && p.info.imageUrl) || "";
+    var buys = p.txns && p.txns.h1 && p.txns.h1.buys;
+    var sells = p.txns && p.txns.h1 && p.txns.h1.sells;
+    var ok = p.dexId === "pumpfun" || p.dexId === "pumpswap";
     return {
       mint: base.address || p.tokenAddress || "",
       sym: base.symbol || p.symbol || "?",
       name: base.name || p.name || "",
-      mc: p.marketCap != null ? p.marketCap : p.fdv,
-      vol: p.volume && p.volume.h1,
-      h1: p.priceChange && p.priceChange.h1,
+      img: img,
       price: p.priceUsd,
+      h1: p.priceChange && p.priceChange.h1,
+      h24: p.priceChange && p.priceChange.h24,
+      mc: p.marketCap != null ? p.marketCap : p.fdv,
+      liq: p.liquidity && p.liquidity.usd,
+      vol: p.volume && p.volume.h1,
       dex: p.dexId || "",
       chain: p.chainId || "",
+      score: null,
+      risks: [],
+      ok: !!ok,
+      bonding: p.dexId === "pumpfun",
+      buys: buys,
+      sells: sells,
       url: p.url || (base.address ? "https://dexscreener.com/solana/" + base.address : ""),
       pairCreatedAt: p.pairCreatedAt || null
     };
@@ -118,15 +131,15 @@
   }
 
   async function loadPaperBot() {
-    // INNESTO HUNTER: puntare allo snapshot pubblico (bot_data.public.json) quando disponibile nel repo/CDN
     var data = null;
     try {
-      var r = await fetch(PAPER.bot, { credentials: "omit" });
+      var r = await fetch(PAPER.bot + "?t=" + Date.now(), { credentials: "omit", cache: "no-store" });
       if (r.ok) data = await r.json();
-    } catch (e) { /* graceful: file non ancora presente */ }
-    if (data && data.live_mode === true) {
-      // Hard rule UI: non mostrare come live
-      data = Object.assign({}, data, { live_mode: false, _forced_ro: true });
+    } catch (e) { /* graceful */ }
+    if (data) {
+      data = Object.assign({}, data, { live_mode: false });
+      if (data.live_mode === true) data._forced_ro = true;
+      data.live_mode = false;
     }
     return data;
   }
@@ -177,32 +190,39 @@
   }
 
   function renderStrategies(d) {
-    // INNESTO HUNTER: mappare strategies.copy|reentry|arb e blocco v1; badge PnL non affidabile
     var meta = $("carte-meta");
     var ph = $("carte-ph");
     var ul = $("carte-list");
+    var warn = (d && d.pnl_warning) || {};
     document.querySelectorAll("#carte-stats .stat").forEach(function (el) {
       var k = el.getAttribute("data-strat");
       var b = el.querySelector("b");
       if (!d || !b) { if (b) b.textContent = "—"; return; }
       var s = (d.strategies && d.strategies[k]) || (k === "v1" ? d.v1 : null);
-      var pnl = s && (s.pnl != null ? s.pnl : s.total_pnl);
-      b.textContent = pnl != null ? nf(pnl, 2) + " $" : "—";
+      var pnl = s && (s.pnl != null ? s.pnl : (s.pnl_totale != null ? s.pnl_totale : s.total_pnl));
+      var label = pnl != null ? nf(pnl, 2) + " $" : "—";
+      if (warn[k]) label += " ⚠";
+      b.textContent = label;
     });
     if (!d) {
-      if (meta) meta.textContent = "live_mode = false · in attesa di bot_data.public.json / snapshot pubblico da Hunter";
+      if (meta) meta.textContent = "live_mode = false · in attesa di bot_data.public.json";
       if (ph) ph.hidden = false;
       if (ul) ul.innerHTML = "";
       return;
     }
     if (ph) ph.hidden = true;
-    var unreliable = !!(d._pnl_unreliable || (d.strategies && (d.strategies.copy || d.strategies.reentry) && d._warn_pump_pnl));
+    var unreliable = !!(warn.copy || warn.reentry || d._pnl_unreliable || d._warn_pump_pnl);
     if (meta) {
       meta.innerHTML = "live_mode = <b>false</b> · aggiornato " + esc(d.updated || "—") +
         (unreliable ? ' · <span class="badge">PnL non affidabile</span>' : "") +
         (d._forced_ro ? " · forzato read-only" : "");
+      if (warn.note) meta.innerHTML += '<div class="nm">' + esc(warn.note) + "</div>";
     }
-    var opens = d.open_positions || [];
+    var opensObj = d.open_positions || {};
+    var opens = Array.isArray(opensObj) ? opensObj : Object.keys(opensObj).map(function (k) {
+      var p = opensObj[k] || {};
+      return Object.assign({ id: k }, p);
+    });
     if (ul) {
       if (!opens.length) {
         ul.innerHTML = '<li><div class="nm">Nessuna posizione paper aperta nello snapshot.</div></li>';
@@ -211,7 +231,7 @@
           return '<li><div><div class="sym">' + esc(p.sym || "?") +
             (p.strategy ? ' <span class="badge">' + esc(p.strategy) + "</span>" : "") +
             '</div><div class="nm">' + esc((p.mint || "").slice(0, 10)) + "…</div></div>" +
-            '<div class="px">' + nf(p.pnl, 2) + " $</div></li>";
+            '<div class="px">' + nf(p.pnl != null ? p.pnl : p.pnl_mtm, 2) + " $</div></li>";
         }).join("");
       }
     }
@@ -223,28 +243,41 @@
   }
 
   async function refreshScan() {
-    setStatus("Carico stub DexScreener…");
+    setStatus("Carico DexScreener (bonding curve)…");
     $("scan-refresh").disabled = true;
     try {
       var profiles = await fetchProfiles();
       var mapped = profiles.map(fromProfileStub).filter(Boolean);
-      // Arricchisci i primi mint con pair data (pubblico)
-      var mints = mapped.map(function (t) { return t.mint; }).filter(Boolean).slice(0, 30);
-      var pairs = await fetchTokenPairs(mints);
-      var byMint = {};
-      pairs.forEach(function (p) {
-        var n = normalizePair(p);
-        if (n && n.mint && n.chain === "solana") byMint[n.mint] = n;
+      var mints = [];
+      var seen = {};
+      mapped.forEach(function (t) {
+        if (t.mint && !seen[t.mint]) { seen[t.mint] = 1; mints.push(t.mint); }
       });
-      state.tokens = mapped.map(function (t) { return byMint[t.mint] || t; });
-      // Filtra solo solana se presente chain
-      state.tokens = state.tokens.filter(function (t) { return !t.chain || t.chain === "solana"; });
+      var byMint = {};
+      for (var i = 0; i < Math.min(mints.length, 60); i += 30) {
+        var pairs = await fetchTokenPairs(mints.slice(i, i + 30));
+        pairs.forEach(function (p) {
+          var n = normalizePair(p);
+          if (!n || !n.mint || n.chain !== "solana") return;
+          // Preferisci pumpfun (ancora in bonding) su altri dex dello stesso mint
+          var prev = byMint[n.mint];
+          if (!prev || (n.dex === "pumpfun" && prev.dex !== "pumpfun")) byMint[n.mint] = n;
+        });
+      }
+      state.tokens = mints.map(function (m) { return byMint[m]; }).filter(Boolean);
+      // Default: mostra prima chi è ancora in bonding curve
+      state.tokens.sort(function (a, b) {
+        var ba = a.bonding ? 1 : 0, bb = b.bonding ? 1 : 0;
+        if (ba !== bb) return bb - ba;
+        return (b.vol || 0) - (a.vol || 0);
+      });
+      var nBond = state.tokens.filter(function (t) { return t.bonding; }).length;
       setStatus(state.tokens.length
-        ? ("Stub: " + state.tokens.length + " profili/pair Solana (può essere incompleto finché Hunter non collega il motore).")
-        : "Nessun dato dallo stub (rete/CORS?). Resta il placeholder finché Hunter non passa i pezzi.");
+        ? (state.tokens.length + " Solana · " + nBond + " ancora in bonding (pumpfun)")
+        : "Nessun dato (rete/CORS?). Prova di nuovo o usa lo snapshot scanner.json.");
       renderScan();
     } catch (e) {
-      setStatus("Stub fallito in modo controllato. Placeholder attivo.");
+      setStatus("Scan fallito in modo controllato. Placeholder attivo.");
       state.tokens = [];
       renderScan();
     }
